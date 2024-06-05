@@ -1,0 +1,19 @@
+.search-input {
+    width: 70%;
+    height: 100px;
+}
+
+.search-input .ant-input {
+    height: 50px;
+    font-size: 20px;
+    /* padding: 0 20px; */
+}
+
+.search-input .ant-input-affix-wrapper {
+    padding: 0 20px;
+}
+
+.search-input .ant-input-search-button {
+    height: 52px;
+    border-radius: 100px;
+}
