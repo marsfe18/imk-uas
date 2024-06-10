@@ -61,12 +61,8 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                     type: 'divider',
                 },
                 {
-                    type: 'group',
-                    label: 'Alamat',
-                    children: [
-                        { label: 'Atase', key: 'atase' },
-                        { label: 'Kantor', key: 'kantor' },
-                    ],
+                    key: 'alamat',
+                    label: <Link href="/alamat">Alamat</Link>,
                 },
             ]
         },

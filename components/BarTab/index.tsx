@@ -2,8 +2,8 @@ import React from 'react';
 import { Button, Card, Col, Divider, Flex, List, Row, Tabs } from 'antd';
 import { AppstoreOutlined, BookOutlined, FieldTimeOutlined, PictureOutlined } from '@ant-design/icons';
 import './index.css';
-import Berita_card from '../Card-Berita';
-import Card2 from '../Card-Berita/Card2';
+import Berita_card from '../Card-Berita/card1';
+import Card2 from '../Card-Berita/card2';
 import { title } from 'process';
 
 const { TabPane } = Tabs;
