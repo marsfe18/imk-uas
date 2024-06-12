@@ -19,13 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>
-          <AntdRegistry>
+        <AntdRegistry>
+          <Providers>
             <Header />
             {children}
             <Footer />
-          </AntdRegistry>
-        </Providers>
+          </Providers>
+        </AntdRegistry>
       </body>
     </html>
   );

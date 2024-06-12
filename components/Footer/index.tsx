@@ -1,56 +1,71 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import { FacebookOutlined, InstagramOutlined, TwitterOutlined, YoutubeOutlined } from '@ant-design/icons';
 
 const Footer = () => {
   return (
-    <>
-      <footer className="border bg-white text-black py-8">
-        <div className="container px-4 sm:px-6 md:px-16 lg:px-36 mb-12">
-          <div className="flex flex-wrap justify-between">
-            <div className="w-full md:w-1/2 mb-4 md:mb-0">
-              <div className="flex items-center mb-4">
-                <img src="logo.png" alt="Logo Kementerian Pertanian" className="h-12 mr-2" />
-                <h2 className="text-xl font-bold">Kementerian Pertanian</h2>
+    <footer className='bg-shade3'>
+      <div className=" text-white py-16 px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto">
+        <div className="tracking-wide">
+          <div className="flex flex-col md:flex-row md:justify-between">
+            <div className='w-6/12'>
+              <div className="flex items-center mb-8">
+                <img src="/logo.png" alt="Logo" className="h-12 mr-4" />
+                <div>
+                  <h2 className="text-white text-3xl sm:text-3xl md:text-4xl font-bold">Kementerian Pertanian</h2>
+                  <p className="text-xl">Republik Indonesia</p>
+                </div>
               </div>
-              <p className="mb-2"><i className="fas fa-envelope mr-2"></i> info@pertanian.go.id</p>
-              <p className="mb-2"><i className="fab fa-whatsapp mr-2"></i> +62 21 1234567</p>
-              <p className="mb-4"><i className="fas fa-map-marker-alt mr-2"></i> Jl. RM. Harsono No.3, Ragunan, Jakarta Selatan</p>
-              <div className="flex">
-                <a href="#" className="mr-4 text-black hover:text-gray-300">
-                  <i className="fab fa-facebook fa-2x"></i>
+              <div className='text-lg'>
+                <p className="mb-6">Jl. Harsono RM. No.3, Ragunan, Jakarta 12550</p>
+                <p className="mb-6">Whatsapp: 0851-7965-7867</p>
+                <p className="">Email: layanan-ip@pertanian.go.if</p>
+              </div>
+              <div className="flex mt-12">
+                <a href="#" className="text-white hover:text-green-400 mr-10">
+                  <FacebookOutlined style={{ fontSize: '48px' }} />
                 </a>
-                <a href="#" className="mr-4 text-black hover:text-gray-300">
-                  <i className="fab fa-instagram fa-2x"></i>
+                <a href="#" className="text-white hover:text-green-400 mr-10">
+                  <InstagramOutlined style={{ fontSize: '48px' }} />
                 </a>
-                <a href="#" className="mr-4 text-black hover:text-gray-300">
-                  <i className="fab fa-twitter fa-2x"></i>
+                <a href="#" className="text-white hover:text-green-400 mr-10">
+                  <TwitterOutlined style={{ fontSize: '48px' }} />
                 </a>
-                <a href="#" className="text-black hover:text-gray-300">
-                  <i className="fab fa-youtube fa-2x"></i>
+                <a href="#" className="text-white hover:text-green-400">
+                  <YoutubeOutlined style={{ fontSize: '48px' }} />
                 </a>
               </div>
             </div>
-            <div className="w-full md:w-1/4 mb-4 md:mb-0">
-              <h3 className="text-lg font-bold mb-4">Fitur Lainnya</h3>
-              <ul className="list-none">
-                <li className="mb-2"><a href="#" className="text-black hover:text-gray-300">Link 1</a></li>
-                <li className="mb-2"><a href="#" className="text-black hover:text-gray-300">Link 2</a></li>
-                <li className="mb-2"><a href="#" className="text-black hover:text-gray-300">Link 3</a></li>
-              </ul>
+            <div className="mt-8 md:mt-0 md:w-3/12 md:flex md:justify-end">
+              <div>
+                <h3 className="text-xl font-semibold mb-6 ">Tentang Kami</h3>
+                <ul className="text-md space-y-2 md:space-y-5">
+                  <li>Profil Kementan</li>
+                  <li>Reformasi Birokrasi</li>
+                  <li>Lembaga Pendidikan</li>
+                  <li>Regulasi</li>
+                  <li>Kontak Kami</li>
+                  <li>FAQ</li>
+                  <li>Perizinan Pertanian</li>
+                </ul>
+              </div>
             </div>
-            <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-bold mb-4">Tautan Lainnya</h3>
-              <ul className="list-none">
-                <li className="mb-2"><a href="#" className="text-black hover:text-gray-300">Link 1</a></li>
-                <li className="mb-2"><a href="#" className="text-black hover:text-gray-300">Link 2</a></li>
-                <li className="mb-2"><a href="#" className="text-black hover:text-gray-300">Link 3</a></li>
-              </ul>
+            <div className="mt-8 md:mt-0 md:w-3/12 md:flex md:justify-end">
+              <div className=''>
+                <h3 className="text-xl font-semibold mb-6">Tautan Lainnya</h3>
+                <ul className="text-md space-y-2 md:space-y-5">
+                  <li>Satu Data Pertanian</li>
+                  <li>Perpustakaan</li>
+                  <li>Kontak Pengaduan</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+      <div className="text-center p-4 bg-shade4">
+        <p className="text-sm text-[#CAC716]">&copy; 2024 Kementerian Pertanian RI</p>
+      </div>
+    </footer>
   );
 };
 

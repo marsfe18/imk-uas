@@ -1,4 +1,8 @@
 /* Navbar */
+.nav-header {
+    padding: 7rem;
+    background-color: white;
+}
 
 .navbar {
     padding-bottom: 1px;
@@ -26,8 +30,8 @@
 .navbar-menu {
     width: calc(100% - 250px);
     float: right;
-    /* display: flex; */
-    /* justify-content: end; */
+    display: flex;
+    justify-content: end;
 }
 
 .navbar-menu .ant-layout-header {
@@ -43,8 +47,8 @@
 }
 
 .navbar-menu .leftMenu {
-    float: right;
-    width: 735px;
+    /* float: right; */
+    width: 740px;
     /* padding-left: 600px; */
 }
 
@@ -98,5 +102,6 @@
         margin-bottom: 0;
     }
 }
+
 
 /* Navbar End */

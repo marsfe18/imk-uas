@@ -27,15 +27,15 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                     label: 'Kementrian',
                     children: [
                         {
-                            label: <Link href="/sejarah">Sejarah</Link>,
+                            label: <Link href="/profil#sejarah">Sejarah</Link>,
                             key: 'sejarah'
                         },
                         {
-                            label: <Link href="/visi-misi">Visi</Link>,
+                            label: <Link href="/profil#visi-misi">Visi</Link>,
                             key: 'visi'
                         },
                         {
-                            label: <Link href="/tugas">Tugas</Link>,
+                            label: <Link href="/profil#tugas">Tugas dan Fungsi</Link>,
                             key: 'tugas'
                         },
                         {
@@ -78,52 +78,58 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                 { label: 'Keuangan', key: 'keuangan' },
                 { label: 'Capaian Kinerja', key: 'capaian-kinerja' },
             ]
-            // disabled: true,
         },
         {
             label: <Link href="/basis-data">Basis Data</Link>,
             key: 'basis-data',
             icon: <DatabaseOutlined />,
-            // disabled: true,
         },
         {
             label: 'Publikasi',
-            key: 'SubMenu',
+            key: 'publikasi',
             icon: <InsertRowAboveOutlined />,
+            // children: [
+            //     {
+            //         type: 'group',
+            //         label: 'Item 1',
+            //         children: [
+            //             { label: 'Option 1', key: 'setting:1' },
+            //             { label: 'Option 2', key: 'setting:2' },
+            //         ],
+            //     },
+            //     {
+            //         type: 'group',
+            //         label: 'Item 2',
+            //         children: [
+            //             { label: 'Option 3', key: 'setting:3' },
+            //             { label: 'Option 4', key: 'setting:4' },
+            //         ],
+            //     },
+            // ],
+        },
+        {
+            key: 'informasi',
+            label: 'Informasi Publik',
+            icon: <BookOutlined />,
             children: [
+                { label: <Link href="/informasi-publik/sk-dip">SK DIP</Link>, key: 'sk-dip' },
+                { label: 'Laporan Kekayaan', key: 'lhk' },
+                { label: 'PPID', key: 'ppid' },
+                { label: 'Pengaduan', key: 'pengaduan' },
                 {
-                    type: 'group',
-                    label: 'Item 1',
+                    label: 'PMK', key: 'pmk', type: 'group',
                     children: [
-                        { label: 'Option 1', key: 'setting:1' },
-                        { label: 'Option 2', key: 'setting:2' },
-                    ],
+                        { label: 'Buku Saku', key: 'buku-saku' },
+                        { label: 'Materi Pengendalian', key: 'pengendalian' },
+                    ]
                 },
-                {
-                    type: 'group',
-                    label: 'Item 2',
-                    children: [
-                        { label: 'Option 3', key: 'setting:3' },
-                        { label: 'Option 4', key: 'setting:4' },
-                    ],
-                },
-            ],
-        },
-        {
-            key: 'people',
-            label: (
-                <Link href="/informasi-publik">Informasi Publik</Link>
-            ),
-            icon: <BookOutlined />
-        },
-        {
-            key: 'search',
-            icon: <SearchOutlined></SearchOutlined>
-
+            ]
         }
     ];
 
-    return <Menu mode={mode} items={items} style={{}} />;
+    return <Menu
+        style={{ fontSize: '16px', fontFamily: 'sans-serif' }}
+        mode={mode} items={items} />;
 };
 
 export default LeftMenu;

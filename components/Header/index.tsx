@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Layout, Button, Drawer } from 'antd';
 import LeftMenu from './leftMenu';
-import RightMenu from './rightMenu';
 import { MenuOutlined } from '@ant-design/icons';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import './index.css';
@@ -15,18 +13,16 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="navbar">
-            <Layout>
-                <Layout.Header className="nav-header" style={{
-                    backgroundColor: 'white', borderBottom: '0',
-                    padding: '0 35px'
-                }}>
-                    <div className="logo">
-                        <Link href="/" style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
-                            <Image src="/logo.png" alt="Logo" width={30} height={30} />
+        <nav className="navbar justify-center">
+            <div className='px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto my-0'>
+                <Layout.Header className="nav-header" style={{ backgroundColor: 'white', padding: '0', }}>
+                    <Link href="/"
+                    >
+                        <div className="logo h-full" style={{ display: 'flex', alignItems: 'center', height: '100%', }}>
+                            <img src="/logo.png" alt="Logo" width={30} height={30} />
                             <span className="ml-3 text-gray-700 text-lg font-semibold">Kementrian Pertanian</span>
-                        </Link>
-                    </div>
+                        </div>
+                    </Link>
                     <div className="navbar-menu">
                         <div className="leftMenu">
                             <LeftMenu mode="horizontal" />
@@ -37,7 +33,7 @@ const Navbar: React.FC = () => {
                             </Button>
                         </div>
                         <Drawer
-                            title="Brand Here"
+                            title="Kementrian Pertanian"
                             placement="right"
                             closable={true}
                             onClose={showDrawer}
@@ -49,7 +45,7 @@ const Navbar: React.FC = () => {
                         </Drawer>
                     </div>
                 </Layout.Header>
-            </Layout>
+            </div>
         </nav>
     );
 };

@@ -45,7 +45,7 @@ const GaleriFoto: React.FC = () => {
         ]
     };
     return (
-        <div className="tab px-4 pb-10 sm:px-6 md:px-16 lg:px-36  bg-gray-100">
+        <div className="mt-8">
             <header className="judul-galeri">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-700 font-bold mb-4 sm:mb-4 md:mb-10">Galeri Foto</h2>
             </header>
@@ -63,7 +63,6 @@ const GaleriFoto: React.FC = () => {
                     </Slider>
                 </div>
             </div>
-            <Divider style={{}} />
         </div>
     );
 };

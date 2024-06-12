@@ -3,6 +3,7 @@ import React from 'react';
 import { Avatar, Card, Col, Divider, Row, Table } from 'antd';
 import { VerticalAlignBottomOutlined, FileOutlined } from '@ant-design/icons';
 import type { TableColumnsType, TableProps } from 'antd';
+import Link from 'next/link';
 
 interface DataType {
     key: React.Key;
@@ -111,16 +112,17 @@ const App: React.FC = () => {
 
                     <h2 className="text-3xl sm:text-3xl md:text-4xl text-gray-700 font-bold mb-4">Alamat Kantor Pusat dan Daerah</h2>
                 </header>
-                <Card bordered style={{ width: '100%' }}>
-                    <Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                        <div style={{ display: 'flex' }}>
-                            <FileOutlined style={{ fontSize: '36px', color: 'gray' }} />
-                            <Col content='center'><h2 className='ml-3 text-2xl font-normal'>Unduh alamat lengkap</h2></Col>
-                        </div>
-                        <VerticalAlignBottomOutlined style={{ fontSize: '36px', color: 'gray' }} />
-                    </Row>
-                </Card>
-
+                <Link href={'https://ppid.pertanian.go.id/doc/1/Buku_Daftar_Alamat_2023.pdf'} style={{ width: '100%' }}>
+                    <Card bordered >
+                        <Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                            <div style={{ display: 'flex' }}>
+                                <FileOutlined style={{ fontSize: '36px', color: 'gray' }} />
+                                <Col content='center'><h2 className='ml-3 text-2xl font-normal'>Unduh alamat lengkap</h2></Col>
+                            </div>
+                            <VerticalAlignBottomOutlined style={{ fontSize: '36px', color: 'gray' }} />
+                        </Row>
+                    </Card>
+                </Link>
             </Row>
         </div>
 
