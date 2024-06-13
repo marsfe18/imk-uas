@@ -21,9 +21,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <AntdRegistry>
           <Providers>
-            <Header />
-            {children}
-            <Footer />
+            <div className="bg-white">
+              <Header />
+              {children}
+              <Footer />
+
+            </div>
           </Providers>
         </AntdRegistry>
       </body>

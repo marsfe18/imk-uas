@@ -13,9 +13,9 @@ export const beritaLength = dataBerita.length;
 export const defaultPage = 1;
 export const defaultPerPage = 5;
 
-export default function beritaPage({ searchParams }: {
+const BeritaPage = ({ searchParams }: {
     searchParams: { [key: string]: string | string[] | undefined }
-}) {
+}) => {
     const router = useRouter();
     const page: number = Number(searchParams?.page ?? defaultPage);
     const per_page: number = Number(searchParams?.per_page ?? defaultPerPage);
@@ -67,3 +67,5 @@ export default function beritaPage({ searchParams }: {
         </div>
     )
 };
+
+export default BeritaPage;
