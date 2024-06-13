@@ -36,17 +36,17 @@ const config: Config = {
   plugins: [
     plugin(function ({ addUtilities }) {
       addUtilities({
-        '.text-heading5': {
+        '.text-heading1': {
           fontFamily: 'Inter, sans-serif',
           fontWeight: '600',
-          fontSize: '64px',
+          fontSize: '55px',
           lineHeight: '76px',
         },
-        '.text-heading6': {
+        '.text-heading2': {
           fontFamily: 'Inter, sans-serif',
           fontWeight: '600',
-          fontSize: '88px',
-          lineHeight: '96px',
+          fontSize: '36px',
+          lineHeight: '44px',
         },
         '.text-heading3': {
           fontFamily: 'Inter, sans-serif',

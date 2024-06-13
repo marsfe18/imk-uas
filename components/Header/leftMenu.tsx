@@ -27,31 +27,31 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                     label: 'Kementrian',
                     children: [
                         {
-                            label: <Link href="/profil#sejarah">Sejarah</Link>,
+                            label: <Link href="/profil/sejarah">Sejarah</Link>,
                             key: 'sejarah'
                         },
                         {
-                            label: <Link href="/profil#visi-misi">Visi</Link>,
+                            label: <Link href="/profil/visi-misi">Visi</Link>,
                             key: 'visi'
                         },
                         {
-                            label: <Link href="/profil#tugas">Tugas dan Fungsi</Link>,
+                            label: <Link href="/profil/tugas">Tugas dan Fungsi</Link>,
                             key: 'tugas'
                         },
                         {
-                            label: <Link href="/struktur">Struktur</Link>,
+                            label: <Link href="/profil/struktur">Struktur</Link>,
                             key: 'struktur'
                         },
                         {
-                            label: <Link href="/lambang">Lambang</Link>,
+                            label: <Link href="/profil/lambang">Lambang</Link>,
                             key: 'lambang'
                         },
                         {
-                            label: <Link href="/data-pegawai">Data Pegawai</Link>,
+                            label: <Link href="/profil/data-pegawai">Data Pegawai</Link>,
                             key: 'data-pegawai'
                         },
                         {
-                            label: <Link href="/unit-kerja">Unit Kerja</Link>,
+                            label: <Link href="/profil/portal">Unit Kerja</Link>,
                             key: 'unit-kerja'
                         },
                     ]
@@ -62,7 +62,7 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                 },
                 {
                     key: 'alamat',
-                    label: <Link href="/alamat">Alamat</Link>,
+                    label: <Link href="/profil/alamat">Alamat</Link>,
                 },
             ]
         },

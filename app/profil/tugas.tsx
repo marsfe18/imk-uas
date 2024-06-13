@@ -1,7 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { Anchor, Col, Divider, Row } from 'antd';
-import Judul1 from '@/components/Tittle/judul1';
+import Judul2 from '@/components/Tittle/judul2';
+import Judul3 from '@/components/Tittle/judul3';
 
 
 const Tugas: React.FC = () => {
@@ -17,19 +18,24 @@ const Tugas: React.FC = () => {
 
     return (
         <>
+            <header id='tugas'>
+                <Judul2 text='Profil' />
+                <h2 className="text-gray-700 text-heading2 lg:text-heading1">Tugas dan Fungsi</h2>
+            </header>
+            <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='tugas'>
-                <Judul1 text='Tugas' />
-                <p className="text-lg leading-relaxed">
+                <Judul3 text='Tugas' />
+                <p className="text-xl leading-relaxed">
                     Berdasarkan Peraturan Presiden Republik Indonesia Nomor 117 Tahun 2022, Kementerian Pertanian mempunyai tugas menyelenggarakan urusan pemerintahan di bidang pertanian untuk membantu Presiden dalam menyelenggarakan pemerintahan negara.
                 </p>
             </div>
             <Divider></Divider>
             <div id='fungsi' className=''>
-                <Judul1 text='Fungsi' />
-                <p className="text-lg leading-relaxed mb-4">
+                <Judul3 text='Fungsi' />
+                <p className="text-xl leading-relaxed mb-4">
                     Dalam melaksanakan tugas, Kementerian Pertanian menyelenggarakan fungsi sebagai berikut:
                 </p>
-                <ol className="list-decimal list-inside text-lg leading-relaxed mb-4">
+                <ol className="list-decimal list-inside text-xl leading-relaxed mb-4 space-y-3">
                     <li>
                         Perumusan, penetapan, dan pelaksanaan kebijakan di bidang penyediaan prasarana dan sarana pertanian, peningkatan produksi komoditas pertanian, peningkatan nilai tambah, penguatan daya saing, dan pemasaran hasil pertanian.
                     </li>

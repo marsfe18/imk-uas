@@ -13,6 +13,31 @@ export function Providers({ children }: { children: React.ReactNode }) {
                 // colorBgContainer: '#f6ffed',
 
             },
+            components: {
+                Table: {
+                    headerBg: '#203510',
+                    headerColor: '#ffffff',
+                    headerSortHoverBg: '#3E4F32',
+                    headerSortActiveBg: '#3E4F32',
+                },
+            },
             // algorithm: theme.defaultAlgorithm,
         }}>{children}</ConfigProvider>
 }
+
+{/* <ConfigProvider
+theme={{
+    components: {
+        Table: {
+            headerBg: '#203510',
+            headerColor: '#ffffff',
+            headerSortHoverBg: '#3E4F32',
+            headerSortActiveBg: '#3E4F32',
+        },
+    },
+    token: {
+        // colorText: '#ffffff'
+        colorTextHeading: '#ffffff'
+    },
+}}
+> */}

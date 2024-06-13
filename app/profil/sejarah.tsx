@@ -1,15 +1,18 @@
 // components/Sejarah.tsx
 import Judul1 from '@/components/Tittle/judul1';
+import Judul2 from '@/components/Tittle/judul2';
+import { Divider } from 'antd';
 import React from 'react';
 
 const Sejarah: React.FC = () => {
     return (
         <>
             <header className="judul-galeri">
-                <h2 className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-2">Profil</h2>
-                <Judul1 text='Sejarah Kementrian Pertanian' />
+                <Judul2 text='Profil' />
+                <h2 className="text-gray-700 text-heading2 lg:text-heading1 mb-2">Sejarah Kementrian</h2>
             </header>
-            <p className="text-lg leading-relaxed">
+            <Divider style={{ borderTop: '4px solid #8A8817' }} />
+            <p className="text-xl leading-relaxed">
                 Sumber daya alam Indonesia yang kaya dipengaruhi oleh faktor keadaan alam Indonesia yang
                 beriklim tropis dan letak geografis di antara dua benua, Asia dan Australia serta dua
                 samudra, Samudra Pasifik dan Samudra Hindia. Sehingga sektor pertanian di Indonesia menjadi

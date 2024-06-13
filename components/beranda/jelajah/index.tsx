@@ -1,8 +1,6 @@
-
 import React from 'react';
-import {
-    ArrowRightOutlined
-} from '@ant-design/icons';
+import { ArrowRightOutlined } from '@ant-design/icons';
+import Link from 'next/link';
 
 interface JelajahiDataProps {
     // Anda dapat menambahkan props yang diperlukan di sini
@@ -10,10 +8,10 @@ interface JelajahiDataProps {
 
 const JelajahiData: React.FC<JelajahiDataProps> = () => {
     const menuItems = [
-        'Penduduk, tenaga kerja, dan kemiskinan pertanian',
-        'Basis data pertanian',
-        'Informasi harga komoditas',
-        'Ekspor Impor',
+        { label: 'Penduduk, tenaga kerja, dan kemiskinan pertanian', href: '/penduduk-tenaga-kerja' },
+        { label: 'Basis data pertanian', href: '/basis-data-pertanian' },
+        { label: 'Informasi harga komoditas', href: '/harga-komoditas' },
+        { label: 'Ekspor Impor', href: '/ekspor-impor' },
     ];
 
     return (
@@ -25,7 +23,9 @@ const JelajahiData: React.FC<JelajahiDataProps> = () => {
                 {menuItems.map((item, index) => (
                     <li key={index} className="flex items-center text-[23px] font-semibold font-inter">
                         <ArrowRightOutlined style={{ marginRight: 20 }} />
-                        <span className="inline-block border-b pb-2">{item}</span>
+                        <Link href={item.href} className="inline-block border-b pb-2">
+                            {item.label}
+                        </Link>
                     </li>
                 ))}
             </ul>

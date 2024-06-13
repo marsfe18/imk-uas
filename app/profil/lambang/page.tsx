@@ -4,20 +4,22 @@ import { Anchor, Button, Col, Divider, Flex, Image, Row, Tabs } from 'antd';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Judul2 from '@/components/Tittle/judul2';
 // import './index.css'
 
 const { TabPane } = Tabs;
 
-const SejarahPage: React.FC = () => {
+const LambangPage: React.FC = () => {
     const [targetOffset, setTargetOffset] = useState<number>();
     return (
-        <div className='px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto flex flex-col md:flex-row justify-center'>
-            <div className=" bg-white text-black pr-10 pb-10">
+        <div className='px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto'>
+            <div className=" bg-white text-black pb-10">
                 <header className="judul-galeri">
-                    <h2 className="text-lg sm:text-xl md:text-xl text-gray-700 mb-2">Profil</h2>
-                    <h2 className="text-3xl sm:text-3xl md:text-4xl text-gray-700 font-bold mb-4">Lambang Organisasi</h2>
+                    <Judul2 text='Profil' />
+                    <h2 className=" text-gray-700  text-heading2 md:text-heading1">Lambang Organisasi</h2>
                 </header>
-                <Image src='/struktur.jpg'></Image>
+                <Divider style={{ borderTop: '4px solid #8A8817' }} />
+                <Image src='/lambang.jpg'></Image>
                 <ul className="list-none list-inside text-xl leading-relaxed mb-4 mt-4 space-y-3">
                     <li>
                         <strong>Tunas</strong>: Menggambarkan pengertian biologis dari seluruh kegiatan yang dikelola oleh Kementerian Pertanian, kecuali manusia sebagai benda hidup.
@@ -51,7 +53,7 @@ const SejarahPage: React.FC = () => {
                     .
                 </p>
             </div>
-            <div className="anchor-profile mt-10 pr-4 lg:w-1/5">
+            {/* <div className="anchor-profile mt-10 pr-4">
                 <Anchor
                     offsetTop={64}
                     targetOffset={targetOffset}
@@ -98,21 +100,11 @@ const SejarahPage: React.FC = () => {
                             href: '#fungsi',
                             title: <p className='text-lg'>Fungsi</p>,
                         },
-                        // {
-                        //     key: 'struktur',
-                        //     href: '#struktur',
-                        //     title: <p className='text-lg'>Struktur Organisasi</p>,
-                        // },
-                        // {
-                        //     key: 'lambang',
-                        //     href: '#lambang',
-                        //     title: <p className='text-lg'>Lambang Organisasi</p>,
-                        // },
                     ]}
                 />
-            </div>
+            </div> */}
         </div>
     );
 };
 
-export default SejarahPage;
+export default LambangPage;
