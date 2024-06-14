@@ -18,7 +18,7 @@ const IndeksKonten: React.FC = () => {
                     {
                         iKepuasan.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }
