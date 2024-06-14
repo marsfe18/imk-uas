@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button, Card, Col, Layout, Row, Typography, Space, Divider } from 'antd';
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from '@ant-design/icons';
-import Hero from "@/components/Hero";
+import Hero from "@/components/beranda/Hero";
 import GaleriFoto from '@/components/Galeri';
 import Kalender from '@/components/Tanggal';
 import BeritaBaru from '@/components/beranda/berita';
@@ -11,6 +11,7 @@ import PenguBaru from '@/components/beranda/pengumuman';
 import JelajahiData from '@/components/beranda/jelajah';
 import PvtBerita from '@/components/beranda/pvt';
 import MaxWLayout from './MaxWLayout';
+import { useRouter } from 'next/navigation';
 
 const { Title, Text } = Typography;
 const { Header, Content, Footer } = Layout;

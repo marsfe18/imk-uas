@@ -1,21 +1,13 @@
 import React from 'react';
 import { Card, Typography } from 'antd';
-import { DownloadOutlined } from '@ant-design/icons';
 import Meta from 'antd/es/card/Meta';
+import { PengumumanProps } from '@/utils/dataType';
 
-const { Title, Text, Link } = Typography;
+const { Title, Text } = Typography;
 
-interface PengumumanProps {
-    data: {
-        judul: string;
-        nomorPengumuman: string;
-        linkDownload: string;
-        deskripsi: string;
-    }
-}
 
 const Pengumuman1: React.FC<PengumumanProps> = ({
-    data
+    judul, nomor, file, deskripsi
 }) => {
     return (
         <div className='mb-2'>
@@ -23,11 +15,11 @@ const Pengumuman1: React.FC<PengumumanProps> = ({
                 <Meta
                     title={
                         <>
-                            <Title level={3}>{data.judul}</Title>
-                            <Text>{data.nomorPengumuman}</Text>
+                            <Title level={3}>{judul}</Title>
+                            <Text>{nomor}</Text>
                         </>
                     }
-                    description={<Text>{data.deskripsi}</Text>}
+                    description={<Text>{deskripsi}</Text>}
                 />
             </Card>
         </div>

@@ -1,5 +1,5 @@
-import { iKepuasan } from '@/components/data/dataKinerja';
-import FileCard from '@/components/File-unduh';
+import { iKepuasan } from '@/utils/dataKinerja';
+import FileCard from '@/components/Card/File-unduh';
 import { Divider } from 'antd';
 import React from 'react';
 

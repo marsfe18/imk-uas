@@ -2,8 +2,8 @@ import React from 'react';
 import Judul1 from '@/components/Tittle/judul1';
 import { Divider, Row, Col } from 'antd';
 // import { dataBerita } from '@/components/Card-Berita/dataBerita';
-import CardPenguHome from './card';
-import { dataPengumuman } from '@/components/pengumuman/dataPengu';
+import CardPenguHome from '../../Card/cardPengumuman';
+import { dataPengumuman } from '@/utils/dataPengu';
 
 const PenguBaru: React.FC = () => {
     return (

@@ -1,6 +1,6 @@
 // utils/constants.ts
-import { dataBerita } from '@/components/Card-Berita/dataBerita';
-import { dataPengumuman } from '@/components/pengumuman/dataPengu';
+import { dataBerita } from '@/utils/dataBerita';
+import { dataPengumuman } from '@/utils/dataPengu';
 
 export const beritaLength = dataBerita.length;
 export const defaultPage = 1;

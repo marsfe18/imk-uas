@@ -1,7 +1,7 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PenguCard from '@/components/pengumuman/penguCard1';
-import { dataPengumuman } from '@/components/pengumuman/dataPengu';
+import { dataPengumuman } from '@/utils/dataPengu';
 import { DatePicker } from 'antd';
 import { PagesController } from './pageController';
 import { useRouter } from 'next/navigation';
@@ -52,7 +52,13 @@ export default function PengumumanPage({ searchParams }: {
                         <div>
                             {
                                 dataPengumuman.slice((page - 1) * defaultPerPage, page * defaultPerPage).map((news, index) => (
-                                    <PenguCard data={news} key={index} />
+                                    <PenguCard
+                                        judul={news.judul}
+                                        gambar={news.gambar}
+                                        deskripsi={news.deskripsi}
+                                        file={news.file}
+                                        nomor={news.nomor}
+                                        key={index} />
                                 ))
                             }
                         </div>

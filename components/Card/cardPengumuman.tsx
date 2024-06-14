@@ -4,7 +4,7 @@ import Image from 'next/image';
 interface PenguProps {
     data: {
         judul: string,
-        nomorPengumuman: string,
+        nomor: string,
         gambar: string,
     }
 }
@@ -37,7 +37,7 @@ const CardPenguHome: React.FC<PenguProps> = ({ data }) => {
                     <h2 className="text-lg xl:text-2xl font-semibold hover:text-green-800 transition-colors duration-300 text-black">
                         {truncatedTitle}
                     </h2>
-                    <p className="text-gray-600">{data.nomorPengumuman}</p>
+                    <p className="text-gray-600">{data.nomor}</p>
                 </div>
             </div>
         </div>

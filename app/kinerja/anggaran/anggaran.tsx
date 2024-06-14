@@ -1,12 +1,12 @@
-import { dataDipa, DipaProps } from '@/components/data/dataAnggaran';
-import { rKAnggaran } from '@/components/data/dataKinerja';
-import FileCard from '@/components/File-unduh';
-import Judul2 from '@/components/Tittle/judul2';
+import { dataDipa } from '@/utils/dataAnggaran';
+import { rKAnggaran } from '@/utils/dataKinerja';
+import FileCard from '@/components/Card/File-unduh';
 import Judul3 from '@/components/Tittle/judul3';
-import { ConfigProvider, Divider, Table, TableColumnsType } from 'antd';
+import { Divider, Table, TableColumnsType } from 'antd';
 import React from 'react';
 import { LinkOutlined } from '@ant-design/icons';
 import Link from 'next/link';
+import { DipaProps } from '@/utils/dataType';
 
 const AnggaranKonten: React.FC = () => {
 
@@ -108,7 +108,7 @@ const AnggaranKonten: React.FC = () => {
                     {
                         rKAnggaran.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }

@@ -1,5 +1,5 @@
-import { lKEselon, lKeuangan, lKinerja, lTahunan, lTPpid } from '@/components/data/dataKinerja';
-import FileCard from '@/components/File-unduh';
+import { lKEselon, lKeuangan, lKinerja, lTahunan, lTPpid } from '@/utils/dataKinerja';
+import FileCard from '@/components/Card/File-unduh';
 import Judul3 from '@/components/Tittle/judul3';
 import { Divider } from 'antd';
 import React from 'react';
@@ -20,7 +20,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lKeuangan.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }
@@ -36,7 +36,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lTahunan.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }
@@ -52,7 +52,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lTPpid.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }
@@ -68,7 +68,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lKinerja.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }
@@ -81,7 +81,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lKEselon.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }

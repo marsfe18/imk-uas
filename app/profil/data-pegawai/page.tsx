@@ -5,7 +5,7 @@ import type { InputRef, TableColumnsType, TableColumnType } from 'antd';
 import { Button, Divider, Input, Space, Table } from 'antd';
 import type { FilterDropdownProps } from 'antd/es/table/interface';
 import Highlighter from 'react-highlight-words';
-import { dataPegawai } from '@/components/data/pejabat';
+import { dataPegawai } from '@/utils/pejabat';
 import Judul2 from '@/components/Tittle/judul2';
 
 interface Pegawai {

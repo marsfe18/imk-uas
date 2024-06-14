@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import BeritaCarousel from '@/components/beranda/berita/carousel';
 // import CardBerita from '@/components/beranda/pengumuman';
-import { dataBerita } from '@/components/Card-Berita/dataBerita';
-import CardBerita from '@/components/beranda/berita/card';
+import { dataBerita } from '@/utils/dataBerita';
+import CardBerita from '@/components/Card/cardBerita';
 
 const ImageComponent = () => {
     return (

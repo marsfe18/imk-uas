@@ -1,16 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import { BeritaProps, DataGlobalProps } from '@/utils/dataType';
 
-interface BeritaProps {
-    data: {
-        date: Date,
-        title: string,
-        gambar: string,
-    }
-}
 
-const CardBeritaHome: React.FC<BeritaProps> = ({ data }) => {
-    const formattedDate = data.date.toLocaleDateString('id-ID', {
+const CardGlobal: React.FC<DataGlobalProps> = ({ gambar, judul, tanggal, tipe, file }) => {
+    const formattedDate = tanggal?.toLocaleDateString('id-ID', {
         day: 'numeric',
         month: 'long',
         year: 'numeric',
@@ -20,8 +14,8 @@ const CardBeritaHome: React.FC<BeritaProps> = ({ data }) => {
         <div className="flex items-start border-b border-gray-300 pb-4">
             <div className="w-50">
                 <Image
-                    src={data.gambar}
-                    alt={data.title}
+                    src={gambar}
+                    alt={judul}
                     width={200}
                     height={200}
                     style={{ objectFit: 'cover' }}
@@ -29,15 +23,15 @@ const CardBeritaHome: React.FC<BeritaProps> = ({ data }) => {
             </div>
             <div className="flex-1 ml-4">
                 <div className=''>
-
+                    <p className="text-gray-600">{tipe + ' | ' + formattedDate}</p>
                     <h2 className="text-lg xl:text-2xl font-semibold hover:text-green-800 transition-colors duration-300 text-black">
-                        {data.title}
+                        {judul}
                     </h2>
-                    <p className="text-gray-600">{formattedDate}</p>
                 </div>
             </div>
+
         </div>
     );
 };
 
-export default CardBeritaHome;
+export default CardGlobal;

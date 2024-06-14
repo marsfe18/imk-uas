@@ -1,8 +1,6 @@
-"use client"
-
 import React from 'react';
 import { Carousel, ConfigProvider } from 'antd';
-import { dataBerita } from '@/components/Card-Berita/dataBerita';
+import { dataBerita } from '@/utils/dataBerita';
 import BeritaGambar from './gambar';
 
 const BeritaCarousel: React.FC = () => (
@@ -30,7 +28,7 @@ const BeritaCarousel: React.FC = () => (
             >
                 {
                     dataBerita.slice(0, 4).map((news, index) => (
-                        <div key={index}><BeritaGambar berita={news} /></div>
+                        <div key={index}><BeritaGambar judul={news.judul} gambar={news.gambar} tanggal={news.tanggal} /></div>
                     ))
                 }
             </Carousel>

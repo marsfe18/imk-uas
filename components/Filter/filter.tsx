@@ -20,7 +20,7 @@ const FilterBerita: React.FC = () => {
 
     return (
 
-        <div className="containter-filter border rounded-lg p-3 sticky top-20">
+        <div className="containter-filter border rounded-lg p-3 sticky top-20 mt-16">
             <header className="flex justify-between" onClick={toggleFilter}>
                 <h2 className="text-lg sm:text-xl font-bold md:text-xl">Filter</h2>
                 <DownOutlined />

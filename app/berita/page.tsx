@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Card3 from '@/components/Card-Berita/card3';
-import { dataBerita } from '@/components/Card-Berita/dataBerita';
+import { dataBerita } from '@/utils/dataBerita';
 import { DatePicker } from 'antd';
 import { PagesController } from './pageController';
 import { useRouter } from 'next/navigation';
@@ -52,7 +52,7 @@ const BeritaPage = ({ searchParams }: {
                     {
                         // console.log(dataBerita);
                         dataBerita.slice((page - 1) * defaultPerPage, page * defaultPerPage).map((news, index) => (
-                            <div key={index} className='border mb-2 rounded-lg'><Card3 data={news} /></div>
+                            <div key={index} className='border mb-2 rounded-lg'><Card3 judul={news.judul} gambar={news.gambar} tanggal={news.tanggal} ringkasan={news.ringkasan} author={news.author} deskripsi={news.deskripsi} /></div>
                         ))
                     }
                     <PagesController page={page} router={router} />

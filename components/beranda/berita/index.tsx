@@ -1,10 +1,9 @@
 import React from 'react';
 import BeritaCarousel from './carousel';
-import Judul2 from '@/components/Tittle/judul2';
 import Judul1 from '@/components/Tittle/judul1';
 import { Col, Divider, Row } from 'antd';
-import { dataBerita } from '@/components/Card-Berita/dataBerita';
-import CardBeritaHome from './card';
+import { dataBerita } from '@/utils/dataBerita';
+import CardBeritaHome from '../../Card/cardBerita';
 
 const BeritaBaru: React.FC = () => {
     return (
@@ -23,7 +22,7 @@ const BeritaBaru: React.FC = () => {
                     <div className='pt-5 lg:pt-0 h-[516px] flex flex-col justify-between'>
                         {dataBerita.slice(5, 8).map((news, index) => (
                             <div className='pt-3' key={index}>
-                                <CardBeritaHome data={news} />
+                                <CardBeritaHome gambar={news.gambar} judul={news.judul} tanggal={news.tanggal} />
                             </div>
                         ))}
                     </div>

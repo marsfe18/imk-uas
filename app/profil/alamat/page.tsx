@@ -3,8 +3,8 @@ import { Anchor, Divider, Image, Table } from 'antd';
 import type { TableColumnsType, TableProps } from 'antd';
 import Judul2 from '@/components/Tittle/judul2';
 import Judul3 from '@/components/Tittle/judul3';
-import FileCard from '@/components/File-unduh';
-import { AlamatType, dataAlamat } from '@/components/data/dataAlamat';
+import FileCard from '@/components/Card/File-unduh';
+import { AlamatType, dataAlamat } from '@/utils/dataAlamat';
 
 const columns: TableColumnsType<AlamatType> = [
     {

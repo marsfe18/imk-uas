@@ -1,12 +1,4 @@
-export interface AlamatType {
-    key: React.Key;
-    atase: string;
-    pejabat: string;
-    alamat: string;
-    email: String;
-    phone: String;
-    fax: String;
-}
+import { AlamatType } from "./dataType";
 
 export const dataAlamat: AlamatType[] = [
     {

@@ -1,5 +1,5 @@
-import { rKTahunan, rKUnit } from '@/components/data/dataKinerja';
-import FileCard from '@/components/File-unduh';
+import { rKTahunan, rKUnit } from '@/utils/dataKinerja';
+import FileCard from '@/components/Card/File-unduh';
 import Judul2 from '@/components/Tittle/judul2';
 import Judul3 from '@/components/Tittle/judul3';
 import { Divider } from 'antd';
@@ -29,7 +29,7 @@ const RencanaKerja: React.FC = () => {
                     {
                         rKTahunan.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }
@@ -42,7 +42,7 @@ const RencanaKerja: React.FC = () => {
                     {
                         rKUnit.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.title} fileSize={data.fileSize} fileLink={data.fileLink} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
                             </div>
                         ))
                     }

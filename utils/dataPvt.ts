@@ -1,14 +1,8 @@
-// dataBerita.ts
-// types.ts
-export interface PvtBerita {
-    judul: string;
-    tanggal: Date;
-    gambar: string;
-    link: string;
-}
+import { PvtProps } from "./dataType";
 
 
-export const dataPvt: PvtBerita[] = [
+
+export const dataPvt: PvtProps[] = [
     {
         judul: 'Berita Resmi Pemberian Hak PVT Triwulan I Tahun 2023',
         tanggal: new Date('2023-01-15'),
