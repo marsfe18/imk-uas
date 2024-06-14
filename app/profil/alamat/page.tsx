@@ -4,7 +4,8 @@ import type { TableColumnsType, TableProps } from 'antd';
 import Judul2 from '@/components/Tittle/judul2';
 import Judul3 from '@/components/Tittle/judul3';
 import FileCard from '@/components/Card/File-unduh';
-import { AlamatType, dataAlamat } from '@/utils/dataAlamat';
+import { dataAlamat } from '@/utils/dataAlamat';
+import { AlamatType } from '@/utils/dataType';
 
 const columns: TableColumnsType<AlamatType> = [
     {
