@@ -12,7 +12,7 @@ export const penguLenght = dataPengumuman.length;
 export const defaultPage = 1;
 export const defaultPerPage = 5;
 
-export default function beritaPage({ searchParams }: {
+export default function PengumumanPage({ searchParams }: {
     searchParams: { [key: string]: string | string[] | undefined }
 }) {
     const router = useRouter();
