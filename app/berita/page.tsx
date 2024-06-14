@@ -4,7 +4,7 @@ import Card3 from '@/components/Card-Berita/card3';
 import { dataBerita } from '@/components/Card-Berita/dataBerita';
 import { DatePicker } from 'antd';
 import { PagesController } from './pageController';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import FilterBerita from '@/components/Filter/filter';
 import Judul1 from '@/components/Tittle/judul1';
 
@@ -13,11 +13,12 @@ export const beritaLength = dataBerita.length;
 export const defaultPage = 1;
 export const defaultPerPage = 5;
 
-const BeritaPage = () => {
-    const searchParams = useSearchParams();
+const BeritaPage = ({ searchParams }: {
+    searchParams: { [key: string]: string | string[] | undefined }
+}) => {
     const router = useRouter();
-    const page: number = Number(searchParams.get('page') || defaultPage);
-    const per_page: number = Number(searchParams.get('per_page') || defaultPerPage);
+    const page: number = Number(searchParams?.page ?? defaultPage);
+    const per_page: number = Number(searchParams?.per_page ?? defaultPerPage);
 
     const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         console.log(e);
