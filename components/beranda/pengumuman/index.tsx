@@ -7,7 +7,7 @@ import { dataPengumuman } from '@/components/pengumuman/dataPengu';
 
 const PenguBaru: React.FC = () => {
     return (
-        <div className='pt-10'>
+        <div className='sm:mt-10 mt-28'>
             <div className='flex flex-col justify-center'>
                 <header className=''>
                     <Judul1 text='Pengumuman' />

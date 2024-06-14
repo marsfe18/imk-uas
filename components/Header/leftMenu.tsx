@@ -31,7 +31,7 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                             key: 'sejarah'
                         },
                         {
-                            label: <Link href="/profil/visi-misi">Visi</Link>,
+                            label: <Link href="/profil/visi-misi">Visi dan Misi</Link>,
                             key: 'visi'
                         },
                         {
@@ -71,10 +71,16 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
             key: 'kinerja',
             icon: <AppstoreOutlined />,
             children: [
-                { label: 'Rencana Kerja', key: 'rencana-kerja' },
-                { label: 'Anggaran', key: 'anggaran' },
-                { label: 'Laporan', key: 'laporan' },
-                { label: 'Indeks Kepuasan', key: 'indeks-kepuasan' },
+                {
+                    label: <Link href="/kinerja/rencana-kerja">Rencana Kerja</Link>,
+                    key: 'rencana-kerja'
+                },
+                {
+                    label: <Link href="/kinerja/anggaran">Anggaran</Link>,
+                    key: 'anggaran'
+                },
+                { label: <Link href="/kinerja/laporan">Laporan</Link>, key: 'laporan' },
+                { label: <Link href="/kinerja/ikm">Indeks Kepuasan Masyarakat</Link>, key: 'indeks-kepuasan' },
                 { label: 'Keuangan', key: 'keuangan' },
                 { label: 'Capaian Kinerja', key: 'capaian-kinerja' },
             ]
@@ -88,24 +94,6 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
             label: 'Publikasi',
             key: 'publikasi',
             icon: <InsertRowAboveOutlined />,
-            // children: [
-            //     {
-            //         type: 'group',
-            //         label: 'Item 1',
-            //         children: [
-            //             { label: 'Option 1', key: 'setting:1' },
-            //             { label: 'Option 2', key: 'setting:2' },
-            //         ],
-            //     },
-            //     {
-            //         type: 'group',
-            //         label: 'Item 2',
-            //         children: [
-            //             { label: 'Option 3', key: 'setting:3' },
-            //             { label: 'Option 4', key: 'setting:4' },
-            //         ],
-            //     },
-            // ],
         },
         {
             key: 'informasi',

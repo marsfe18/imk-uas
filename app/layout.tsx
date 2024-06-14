@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import React, { Suspense } from 'react';
-import Loading from "./loading";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { Providers } from './providers'
 import Footer from "@/components/Footer";
@@ -21,11 +20,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <AntdRegistry>
           <Providers>
-            <div className="bg-white">
+            <div className="bg-white text-gray-700 ">
               <Header />
               {children}
               <Footer />
-
             </div>
           </Providers>
         </AntdRegistry>

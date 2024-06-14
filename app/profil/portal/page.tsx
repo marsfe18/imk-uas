@@ -1,13 +1,10 @@
-"use client"
 import React from 'react';
-import {
-    ArrowRightOutlined
-} from '@ant-design/icons';
+import { ArrowRightOutlined } from '@ant-design/icons';
 import Judul2 from '@/components/Tittle/judul2';
 import { Divider } from 'antd';
 import Link from 'next/link';
 
-const SejarahPage: React.FC = () => {
+const PortalPage: React.FC = () => {
     const menuItems = [
         { label: 'Sekretariat Jendral', href: '/sekretariat-jendral' },
         { label: 'Inspektorat Jendral', href: '/inspektorat-jendral' },
@@ -20,7 +17,7 @@ const SejarahPage: React.FC = () => {
     ];
 
     return (
-        <div className='px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto pb-16 text-gray-700'>
+        <div className=''>
             <header className="">
                 <Judul2 text='Profil' />
                 <h2 className="text-heading2 lg:text-heading1 mb-2">Portal Unit Kerja</h2>
@@ -40,4 +37,4 @@ const SejarahPage: React.FC = () => {
     );
 };
 
-export default SejarahPage;
+export default PortalPage;

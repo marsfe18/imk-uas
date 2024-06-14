@@ -13,8 +13,8 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="navbar justify-center">
-            <div className='px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto my-0'>
+        <nav className="navbar">
+            <div className='px-6 md:px-10 xl:px-24 max-w-[1440px] mx-auto my-0'>
                 <Layout.Header className="nav-header" style={{ backgroundColor: 'white', padding: '0', }}>
                     <Link href="/"
                     >

@@ -3,12 +3,12 @@ import Judul3 from '@/components/Tittle/judul3';
 import { Divider } from 'antd';
 import React from 'react';
 
-const VisiMisi: React.FC = () => {
+const VisiKonten: React.FC = () => {
     return (
         <>
             <header id='visi'>
                 <Judul2 text='Profil' />
-                <h2 className="text-gray-700 text-heading2 lg:text-heading1">Visi dan Misi</h2>
+                <h2 className="text-heading2 lg:text-heading1">Visi dan Misi</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='visi'>
@@ -16,8 +16,8 @@ const VisiMisi: React.FC = () => {
                 <p className="text-xl leading-relaxed">
                     Berdasarkan Peraturan Presiden Republik Indonesia Nomor 18 Tahun 2020 tentang Rencana Pembangunan Jangka Menengah Nasional (RPJMN) 2020 - 2024, ditetapkan Visi Presiden dan Wakil Presiden RI 2020 - 2024 adalah "Terwujudnya Indonesia Maju yang Berdaulat, Mandiri dan Berkepribadian berlandaskan Gotong Royong". Untuk mendukung Visi tersebut, maka Kementerian Pertanian menetapkan Visi Pertanian Tahun 2020 - 2024, yakni :
                     <br /><br />
-
-                    Pertanian yang Maju, Mandiri dan Modern untuk Terwujudnya Indonesia Maju yang Berdaulat, Mandiri dan Berkepribadian berlandaskan Gotong Royong
+                    <strong>
+                        Pertanian yang Maju, Mandiri dan Modern untuk Terwujudnya Indonesia Maju yang Berdaulat, Mandiri dan Berkepribadian berlandaskan Gotong Royong</strong>
                 </p>
             </div>
             <Divider />
@@ -55,4 +55,4 @@ const VisiMisi: React.FC = () => {
     );
 };
 
-export default VisiMisi;
+export default VisiKonten;

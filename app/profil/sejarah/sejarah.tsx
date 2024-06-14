@@ -1,15 +1,13 @@
-// components/Sejarah.tsx
-import Judul1 from '@/components/Tittle/judul1';
 import Judul2 from '@/components/Tittle/judul2';
 import { Divider } from 'antd';
 import React from 'react';
 
-const Sejarah: React.FC = () => {
+const SejarahKonten: React.FC = () => {
     return (
         <>
-            <header className="judul-galeri">
+            <header >
                 <Judul2 text='Profil' />
-                <h2 className="text-gray-700 text-heading2 lg:text-heading1 mb-2">Sejarah Kementrian</h2>
+                <h2 className="text-heading2 lg:text-heading1 mb-2">Sejarah Kementrian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <p className="text-xl leading-relaxed">
@@ -46,4 +44,4 @@ const Sejarah: React.FC = () => {
     );
 };
 
-export default Sejarah;
+export default SejarahKonten;

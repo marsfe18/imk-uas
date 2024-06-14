@@ -2,10 +2,10 @@
 import React, { useRef, useState } from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 import type { InputRef, TableColumnsType, TableColumnType } from 'antd';
-import { Button, ConfigProvider, Divider, Input, Space, Table } from 'antd';
+import { Button, Divider, Input, Space, Table } from 'antd';
 import type { FilterDropdownProps } from 'antd/es/table/interface';
 import Highlighter from 'react-highlight-words';
-import { dataPegawai } from '@/components/tabel/pejabat';
+import { dataPegawai } from '@/components/data/pejabat';
 import Judul2 from '@/components/Tittle/judul2';
 
 interface Pegawai {
@@ -19,7 +19,7 @@ interface Pegawai {
 
 type DataIndex = keyof Pegawai;
 
-const App: React.FC = () => {
+const DataPegawaiPage: React.FC = () => {
     const [searchText, setSearchText] = useState('');
     const [searchedColumn, setSearchedColumn] = useState('');
     const searchInput = useRef<InputRef>(null);
@@ -146,40 +146,20 @@ const App: React.FC = () => {
     ];
 
     return (
-        <div className='px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto'>
-            <div className=" bg-white text-black pb-10 md:pr-10">
-                <header id='alamat1'>
+        <div className=''>
+            <div >
+                <header id='data-peg'>
                     <Judul2 text='Profil' />
                     <h2 className="text-gray-700 text-heading2 lg:text-heading1">Data Pegawai</h2>
                     <Divider style={{ borderTop: '4px solid #8A8817' }} />
                 </header>
                 <div>
-                    {/* <ConfigProvider
-                        theme={{
-                            components: {
-                                Table: {
-                                    headerBg: '#203510',
-                                    headerColor: '#ffffff',
-                                    headerSortHoverBg: '#3E4F32',
-                                    headerSortActiveBg: '#3E4F32',
-                                },
-                            },
-                            token: {
-                                // colorText: '#ffffff'
-                                colorTextHeading: '#ffffff'
-                            },
-                        }}
-                    > */}
                     <Table
                         bordered
                         columns={columns}
                         dataSource={dataPegawai}
-                        // onChange={onChange}
                         scroll={{ x: true }}
                     />
-                    {/* </ConfigProvider> */}
-
-                    <Divider />
                 </div>
 
             </div>
@@ -189,4 +169,4 @@ const App: React.FC = () => {
     )
 };
 
-export default App;
+export default DataPegawaiPage;

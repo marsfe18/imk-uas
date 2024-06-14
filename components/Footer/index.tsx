@@ -4,7 +4,7 @@ import { FacebookOutlined, InstagramOutlined, TwitterOutlined, YoutubeOutlined }
 const Footer = () => {
   return (
     <footer className='bg-shade3'>
-      <div className=" text-white py-16 px-6 md:px-10 xl:px-16 max-w-[1440px] mx-auto">
+      <div className=" text-white py-16 px-6 md:px-10 xl:px-24 max-w-[1440px] mx-auto">
         <div className="tracking-wide">
           <div className="flex flex-col md:flex-row md:justify-between">
             <div className='w-6/12'>

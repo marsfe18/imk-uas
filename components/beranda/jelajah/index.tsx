@@ -15,9 +15,9 @@ const JelajahiData: React.FC<JelajahiDataProps> = () => {
     ];
 
     return (
-        <div className="px-6 md:px-10 xl:px-16 py-16 max-w-[1440px] mx-auto my-0 tracking-wide">
+        <div className="px-6 md:px-10 xl:px-24 py-16 max-w-[1440px] mx-auto tracking-wide text-white">
             <header className=''>
-                <h2 className="text-white text-3xl sm:text-3xl md:text-4xl font-bold mb-4">Jelajahi Data</h2>
+                <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-4">Jelajahi Data</h2>
             </header>
             <ul className="space-y-8 pt-5 text-lg md:text-xl">
                 {menuItems.map((item, index) => (

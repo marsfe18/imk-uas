@@ -1,9 +1,9 @@
 "use client"
 import { Anchor, Divider } from 'antd';
 import React, { useState } from 'react';
-import Sejarah from './sejarah';
-import VisiMisi from './visiMisi';
-import Tugas from './tugas';
+import Sejarah from './sejarah/sejarah';
+import VisiMisi from './visi-misi/visiMisi';
+import Tugas from './tugas/tugas';
 
 const SejarahPage: React.FC = () => {
     const [targetOffset, setTargetOffset] = useState<number>();
