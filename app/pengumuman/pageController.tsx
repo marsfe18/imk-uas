@@ -1,5 +1,5 @@
 import React from "react";
-import { defaultPerPage, penguLenght } from "./page";
+import { penguLength, defaultPerPage } from '@/utils/constants';
 import { Pagination } from "antd";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
@@ -18,7 +18,7 @@ export const PagesController: React.FC<PagesControllerProps> = ({ page, router }
     // console.log(defaultPerPage);
     return (
         <div className='flex justify-center'>
-            <Pagination current={page} defaultCurrent={1} total={penguLenght} pageSize={defaultPerPage} onChange={setPage} />
+            <Pagination current={page} defaultCurrent={1} total={penguLength} pageSize={defaultPerPage} onChange={setPage} />
         </div>
     )
 }

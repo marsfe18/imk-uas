@@ -1,5 +1,5 @@
 import React from "react";
-import { defaultPerPage, beritaLength } from "./page";
+import { beritaLength, defaultPage, defaultPerPage } from '@/utils/constants';
 import { Pagination } from "antd";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 
