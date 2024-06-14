@@ -7,11 +7,7 @@ import { PagesController } from './pageController';
 import { useRouter } from 'next/navigation';
 import FilterBerita from '@/components/Filter/filter';
 import Judul1 from '@/components/Tittle/judul1';
-
-// default pagination
-export const beritaLength = dataBerita.length;
-export const defaultPage = 1;
-export const defaultPerPage = 5;
+import { defaultPage, defaultPerPage } from '@/utils/constants';
 
 const BeritaPage = ({ searchParams }: {
     searchParams: { [key: string]: string | string[] | undefined }

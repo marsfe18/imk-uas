@@ -6,11 +6,7 @@ import { DatePicker } from 'antd';
 import { PagesController } from './pageController';
 import { useRouter } from 'next/navigation';
 import FilterBerita from '@/components/Filter/filter';
-
-// default pagination
-export const penguLenght = dataPengumuman.length;
-export const defaultPage = 1;
-export const defaultPerPage = 5;
+import { defaultPage, defaultPerPage } from '@/utils/constants';
 
 export default function PengumumanPage({ searchParams }: {
     searchParams: { [key: string]: string | string[] | undefined }
