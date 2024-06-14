@@ -56,7 +56,7 @@ const BeritaPage = ({ searchParams }: {
                     {
                         // console.log(dataBerita);
                         dataBerita.slice((page - 1) * defaultPerPage, page * defaultPerPage).map((news, index) => (
-                            <div className='border mb-2 rounded-lg'><Card3 key={index} data={news} /></div>
+                            <div key={index} className='border mb-2 rounded-lg'><Card3 data={news} /></div>
                         ))
                     }
                     <PagesController page={page} router={router} />
