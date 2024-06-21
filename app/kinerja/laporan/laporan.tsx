@@ -20,7 +20,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lKeuangan.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }
@@ -36,7 +36,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lTahunan.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }
@@ -52,7 +52,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lTPpid.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }
@@ -68,7 +68,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lKinerja.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }
@@ -81,7 +81,7 @@ const LaporanKonten: React.FC = () => {
                     {
                         lKEselon.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }

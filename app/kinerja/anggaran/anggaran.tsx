@@ -13,7 +13,7 @@ const AnggaranKonten: React.FC = () => {
     const columns: TableColumnsType<DipaProps> = [
         {
             title: 'Unit Kerja',
-            dataIndex: 'title',
+            dataIndex: 'judul',
         },
         {
             title: '2020',
@@ -80,7 +80,7 @@ const AnggaranKonten: React.FC = () => {
     return (
         <>
             <header id='dipa'>
-                <h2 className="text-gray-700 text-heading2 lg:text-heading1">Anggaran Kementrian</h2>
+                <h2 className=" text-heading2 lg:text-heading1">Anggaran Kementrian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='dipa'>
@@ -108,7 +108,7 @@ const AnggaranKonten: React.FC = () => {
                     {
                         rKAnggaran.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }

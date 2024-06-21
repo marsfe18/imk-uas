@@ -6,7 +6,7 @@ import { dataPengumuman } from "./dataPengu";
 export interface PengumumanProps {
     judul: string;
     nomor: string;
-    file: string;
+    link: string;
     deskripsi: string;
     gambar: string;
 }
@@ -34,18 +34,22 @@ export interface DipaProps {
 export interface FileProps {
     judul: string;
     ukuran: string;
-    file: string;
+    link: string;
 }
 
 
 export interface BeritaProps {
     tanggal: Date;
-    author: string;
+    author?: string | null;
     judul: string;
     deskripsi: string;
     ringkasan: string;
     gambar: string;
+    kategori: 'Agenda' | 'Unit Kerja' | 'Siaran Pers' | 'Pengumuman' | 'Pendaftaran Varietas' | 'Perlindungan Varietas' | 'Iptek';
+    link?: string | null;
+    nomor?: string | null;
 }
+
 
 export interface PvtProps {
     judul: string;
@@ -57,7 +61,22 @@ export interface PvtProps {
 export interface DataGlobalProps {
     judul: string;
     gambar: string;
-    file?: string;
-    tanggal?: Date;
-    tipe: 'Berita' | 'Pengumuman' | 'Laporan' | 'Rencana Kerja' | 'Anggaran';
+    link?: string;
+    tipe: 'Laporan' | 'Rencana Kerja' | 'Anggaran' | 'Lainnya';
 }
+
+export interface BukuProps {
+    judul: string;
+    gambar: string;
+    link: string;
+}
+
+export interface MagazineProps {
+    judul: string;
+    gambar: string;
+    link: string;
+    tanggal: Date;
+}
+
+
+export const listKat = ['Agenda', 'Unit Kerja', 'Siaran Pers', 'Pengumuman', 'Pendaftaran Varietas', 'Perlindungan Varietas', 'Iptek'];

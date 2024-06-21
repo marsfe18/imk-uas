@@ -1,10 +1,7 @@
 "use client"
 import React, { useState } from 'react';
-import { Button, Divider, Input, Layout, Space, Typography } from 'antd';
-import Search, { SearchProps } from 'antd/es/input/Search';
+import { Button, Input, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
-import { searchGlobalData } from '@/utils/searchGlobal';
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { useRouter } from 'next/navigation';
 
 const Hero: React.FC = () => {
@@ -12,10 +9,11 @@ const Hero: React.FC = () => {
     const [keyword, setKeyword] = useState('');
     const router = useRouter();
     const handleSearch = () => {
-        const query = { query: keyword };
+        const query = { query: keyword, sort: 'terbaru', kat: 'semua' };
         const queryString = new URLSearchParams(query).toString();
-        router.push(`/searchResults?${queryString}`);
+        router.push(`/pencarian?${queryString}`);
     };
+
 
     return (
         <section

@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="navbar">
-            <div className='px-6 md:px-10 xl:px-24 max-w-[1440px] mx-auto my-0'>
+            <div className='px-6 md:px-14 lg:px-24 max-w-[1440px] mx-auto my-0'>
                 <Layout.Header className="nav-header" style={{ backgroundColor: 'white', padding: '0', }}>
                     <Link href="/"
                     >

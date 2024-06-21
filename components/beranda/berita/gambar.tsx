@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 interface simpleBeritaProps {
     gambar: string;
@@ -8,15 +9,20 @@ interface simpleBeritaProps {
 }
 
 const BeritaGambar: React.FC<simpleBeritaProps> = ({ gambar, judul, tanggal }) => {
-
     const formattedDate = tanggal.toLocaleDateString('id-ID', {
         day: 'numeric',
         month: 'long',
         year: 'numeric',
     });
 
+    const router = useRouter();
+    const handleClick = () => {
+        router.push(`/publikasi/berita/${encodeURIComponent(judul)}`);
+    };
+
+
     return (
-        <div className='relative h-[607px] w-full mx-auto max-w-[649px]'>
+        <div onClick={handleClick} className='relative h-[607px] w-full mx-auto max-w-[649px] cursor-pointer'>
             <Image
                 src={gambar}
                 alt={judul}

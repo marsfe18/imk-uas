@@ -3,12 +3,26 @@ import { Menu, Tooltip } from 'antd';
 import { MenuProps } from 'antd';
 import { AppstoreOutlined, HomeOutlined, InsertRowAboveOutlined, BookOutlined, SearchOutlined, TeamOutlined, DatabaseOutlined } from '@ant-design/icons';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface LeftMenuProps {
     mode: MenuProps['mode'];
 }
 
 const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
+
+    const pathname = usePathname();
+
+    const getSelectedKeys = (): string[] => {
+        if (pathname === '/') return ['beranda'];
+        if (pathname.startsWith('/profil')) return ['profil', pathname.split('/')[2]];
+        if (pathname.startsWith('/kinerja')) return ['kinerja', pathname.split('/')[2]];
+        if (pathname.startsWith('/basis-data')) return ['basis-data'];
+        if (pathname.startsWith('/publikasi')) return ['publikasi', pathname.split('/')[2]];
+        if (pathname.startsWith('/informasi-publik')) return ['informasi', pathname.split('/')[2]];
+        return [];
+    };
+
     const items: MenuProps['items'] = [
         {
             label: (
@@ -81,8 +95,8 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                 },
                 { label: <Link href="/kinerja/laporan">Laporan</Link>, key: 'laporan' },
                 { label: <Link href="/kinerja/ikm">Indeks Kepuasan Masyarakat</Link>, key: 'indeks-kepuasan' },
-                { label: 'Keuangan', key: 'keuangan' },
-                { label: 'Capaian Kinerja', key: 'capaian-kinerja' },
+                // { label: 'Keuangan', key: 'keuangan' },
+                // { label: 'Capaian Kinerja', key: 'capaian-kinerja' },
             ]
         },
         {
@@ -94,6 +108,19 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
             label: 'Publikasi',
             key: 'publikasi',
             icon: <InsertRowAboveOutlined />,
+            children: [
+                {
+                    label: <Link href="/publikasi/berita">Berita</Link>,
+                    key: 'berita'
+                },
+                {
+                    label: <Link href="/publikasi/magazine">E-Magazine</Link>,
+                    key: 'magazine'
+                },
+                { label: <Link href="/publikasi/buku">Buku</Link>, key: 'buku' },
+
+                { label: <Link href="/publikasi/agenda">Agenda</Link>, key: 'agenda' },
+            ]
         },
         {
             key: 'informasi',
@@ -117,7 +144,7 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
 
     return <Menu
         style={{ fontSize: '16px', fontFamily: 'sans-serif' }}
-        mode={mode} items={items} />;
+        mode={mode} items={items} selectedKeys={getSelectedKeys()} />;
 };
 
 export default LeftMenu;

@@ -10,7 +10,7 @@ const LambangPage: React.FC = () => {
         <div className="">
             <header>
                 <Judul2 text='Profil' />
-                <h2 className=" text-gray-700  text-heading2 md:text-heading1">Lambang Organisasi</h2>
+                <h2 className=" text-gray-700 text-heading2 md:text-heading1">Lambang Organisasi</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <Image src='/lambang.jpg'></Image>

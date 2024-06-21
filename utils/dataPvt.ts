@@ -7,7 +7,7 @@ export const dataPvt: PvtProps[] = [
         judul: 'Berita Resmi Pemberian Hak PVT Triwulan I Tahun 2023',
         tanggal: new Date('2023-01-15'),
         gambar: '/pvt/1.jpg',
-        link: 'https://example.com/berita1'
+        link: 'https://heyzine.com/flip-book/e59b956283.html'
     },
     {
         judul: 'Berita Resmi Pemberian Hak PVT Triwulan IV Tahun 2023',

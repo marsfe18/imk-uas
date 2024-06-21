@@ -8,7 +8,7 @@ const VisiPage: React.FC = () => {
     const [targetOffset, setTargetOffset] = useState<number>();
     return (
         <div className='flex flex-col md:flex-row justify-center'>
-            <div className=" bg-white text-black pb-10 md:pr-10">
+            <div className=" bg-white text-gray-700 pb-10 md:pr-10">
                 <AnggaranKonten />
             </div>
             <div className="anchor-profile mt-10 min-w-[160px]">

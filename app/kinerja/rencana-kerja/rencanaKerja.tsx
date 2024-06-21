@@ -29,7 +29,7 @@ const RencanaKerja: React.FC = () => {
                     {
                         rKTahunan.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }
@@ -42,7 +42,7 @@ const RencanaKerja: React.FC = () => {
                     {
                         rKUnit.map((data, index) => (
                             <div key={index} className='mt-4'>
-                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.file} />
+                                <FileCard title={data.judul} fileSize={data.ukuran} fileLink={data.link} />
                             </div>
                         ))
                     }

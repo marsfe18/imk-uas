@@ -3,7 +3,6 @@ import React from 'react';
 import { Button, Card, Col, Layout, Row, Typography, Space, Divider } from 'antd';
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from '@ant-design/icons';
 import Hero from "@/components/beranda/Hero";
-import GaleriFoto from '@/components/Galeri';
 import Kalender from '@/components/Tanggal';
 import BeritaBaru from '@/components/beranda/berita';
 import BeritaCarousel from '@/components/beranda/berita/carousel';

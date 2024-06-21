@@ -6,27 +6,33 @@ import type { Dayjs } from 'dayjs';
 const getListData = (value: Dayjs) => {
     let listData;
     switch (value.date()) {
-        case 8:
+        case 5:
             listData = [
-                { type: 'warning', content: 'This is warning event.' },
-                { type: 'success', content: 'This is usual event.' },
+                { type: 'success', content: 'Rapat Koordinasi Pengembangan Pertanian Organik' },
             ];
             break;
         case 10:
             listData = [
-                { type: 'warning', content: 'This is warning event.' },
-                { type: 'success', content: 'This is usual event.' },
-                { type: 'error', content: 'This is error event.' },
+                { type: 'warning', content: 'Pelatihan Petani Muda' },
+                { type: 'success', content: 'Launching Program Ketahanan Pangan' },
             ];
             break;
         case 15:
             listData = [
-                { type: 'warning', content: 'This is warning event' },
-                { type: 'success', content: 'This is very long usual event......' },
-                { type: 'error', content: 'This is error event 1.' },
-                { type: 'error', content: 'This is error event 2.' },
-                { type: 'error', content: 'This is error event 3.' },
-                { type: 'error', content: 'This is error event 4.' },
+                { type: 'warning', content: 'Kunjungan Kerja ke Sentra Pertanian Jawa Timur' },
+                { type: 'success', content: 'Seminar Nasional Teknologi Pertanian' },
+                { type: 'error', content: 'Deadline Laporan Triwulan' },
+            ];
+            break;
+        case 20:
+            listData = [
+                { type: 'success', content: 'Pameran Hasil Pertanian Nusantara' },
+            ];
+            break;
+        case 25:
+            listData = [
+                { type: 'warning', content: 'Rapat Anggaran Tahun Depan' },
+                { type: 'success', content: 'Peresmian Pusat Riset Pertanian Modern' },
             ];
             break;
         default:
@@ -35,18 +41,17 @@ const getListData = (value: Dayjs) => {
 };
 
 const getMonthData = (value: Dayjs) => {
-    if (value.month() === 8) {
-        return 1394;
+    if (value.month() === 7) { // Agustus
+        return 'Bulan Pangan Nasional';
     }
 };
 
 const Kalender: React.FC = () => {
     const monthCellRender = (value: Dayjs) => {
-        const num = getMonthData(value);
-        return num ? (
+        const text = getMonthData(value);
+        return text ? (
             <div className="notes-month">
-                <section>{num}</section>
-                <span>Backlog number</span>
+                <section>{text}</section>
             </div>
         ) : null;
     };
@@ -71,16 +76,11 @@ const Kalender: React.FC = () => {
     };
 
     return (
-        <div className="mt-16">
-            <Divider />
-            <header className="judul-kalender">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl text-gray-700 font-bold mb-4 sm:mb-4 md:mb-10">Jadwal Kegiatan</h2>
-            </header>
+        <>
             <div>
-                <Calendar style={{ padding: 10, borderRadius: 20 }} cellRender={cellRender} />;
+                <Calendar style={{ padding: 10, borderRadius: 20 }} cellRender={cellRender} />
             </div>
-            <Divider style={{}} />
-        </div>
+        </>
     )
 };
 
