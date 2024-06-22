@@ -1,5 +1,3 @@
-import { BasdatType } from "./dataType";
-
 export const dataBasdat = [
     {
         key: '1',

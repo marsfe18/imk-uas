@@ -1,8 +1,3 @@
-import { dipa } from "./dataAnggaran";
-import { dataBerita } from "./dataBerita";
-import { iKepuasan, lKEselon, lKeuangan, lKinerja, lTahunan, lTPpid, rKAnggaran, rKTahunan, rKUnit } from "./dataKinerja";
-import { dataPengumuman } from "./dataPengu";
-
 export interface PengumumanProps {
     judul: string;
     nomor: string;
@@ -79,6 +74,17 @@ export interface MagazineProps {
 }
 
 export interface BasdatType {
+    key: string;
+    Komoditas: string;
+    Satuan: string;
+    '2020': number;
+    '2021': number;
+    '2022': number;
+    '2023': number;
+    '2024': number;
+}
+
+export interface Basdat2Type {
     key: string;
     Komoditas: string;
     Satuan: string;
