@@ -256,9 +256,8 @@ const options_map = {
     backgroundColor: 'transparent',
     datalessRegionColor: '#ffffff',
     defaultColor: '#f5f5f5',
-    width: '100%',
-    height: '100%',
 };
+
 
 const data_bar = [
     ['Tahun', 'Produksi (ton)'],  // Adding headers to match Google Charts format
@@ -422,10 +421,11 @@ const BasisDataPage: React.FC = () => {
                         chartType="GeoChart"
                         data={data_map}
                         options={options_map}
-                        width="100%"
-                        height="400px"
+                        width={1000} // Set as a number
+                        height={400} // Set as a number
                         legendToggle
                     />
+
                     <Button size="large" onClick={handleButtonClick}>Download Grafis</Button>
                 </div>
 
