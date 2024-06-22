@@ -15,7 +15,7 @@ const PengaduanPage: React.FC = () => {
                 <li>Pemohon melengkapi formulir yang tersedia di dalamnya.</li>
                 <li>Pemohon juga dapat menyampaikan pengaduan melalui google form melalui link Pengaduan Pusat. </li>
             </ul>
-            <Image height={500} src='/pengaduan/1.jpeg'></Image>
+            <Image src='/pengaduan/1.jpeg'></Image>
         </div>
     );
 };

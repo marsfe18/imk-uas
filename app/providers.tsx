@@ -6,12 +6,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
     return <ConfigProvider
         theme={{
             token: {
-                // Seed Token
                 colorPrimary: '#6B8557',
                 borderRadius: 2,
-                // Alias Token
-                // colorBgContainer: '#f6ffed',
-
             },
             components: {
                 Table: {
@@ -20,9 +16,16 @@ export function Providers({ children }: { children: React.ReactNode }) {
                     headerSortHoverBg: '#3E4F32',
                     headerSortActiveBg: '#3E4F32',
                     headerBorderRadius: 8,
-                    cellFontSize: 20,
-                },
+                    cellFontSize: 14,
+                    // Gunakan type assertion di sini
+                    headerIconColor: '#ffffff' as any,
+                    headerIconHoverColor: '#ffffff' as any,
+                    filterDropdownBg: '#ffffff',
+                    filterDropdownColor: '#000000',
+                } as any,
             },
-            // algorithm: theme.defaultAlgorithm,
-        }}>{children}</ConfigProvider>
+        }}
+    >
+        {children}
+    </ConfigProvider>
 }

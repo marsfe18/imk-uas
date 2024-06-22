@@ -6,7 +6,7 @@ const BasisDataLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <MaxWLayout>
             <header className='text-gray-700 '>
-                <Judul2 text='BASIS DATA' />
+                <Judul2 text='Basis Data' />
             </header>
             {children}
         </MaxWLayout>

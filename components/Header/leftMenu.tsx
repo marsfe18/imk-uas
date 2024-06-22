@@ -95,8 +95,6 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                 },
                 { label: <Link href="/kinerja/laporan">Laporan</Link>, key: 'laporan' },
                 { label: <Link href="/kinerja/ikm">Indeks Kepuasan Masyarakat</Link>, key: 'indeks-kepuasan' },
-                // { label: 'Keuangan', key: 'keuangan' },
-                // { label: 'Capaian Kinerja', key: 'capaian-kinerja' },
             ]
         },
         {
@@ -128,16 +126,16 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
             icon: <BookOutlined />,
             children: [
                 { label: <Link href="/informasi-publik/sk-dip">SK DIP</Link>, key: 'sk-dip' },
-                { label: 'Laporan Kekayaan', key: 'lhk' },
-                { label: 'PPID', key: 'ppid' },
+                { label: <Link href="/informasi-publik/lhk">Laporan Kekayaan</Link>, key: 'lhk' },
+                // { label: 'PPID', key: 'ppid' },
                 { label: <Link href="/informasi-publik/pengaduan">Pengaduan</Link>, key: 'pengaduan' },
-                {
-                    label: 'PMK', key: 'pmk', type: 'group',
-                    children: [
-                        { label: 'Buku Saku', key: 'buku-saku' },
-                        { label: 'Materi Pengendalian', key: 'pengendalian' },
-                    ]
-                },
+                // {
+                //     label: 'PMK', key: 'pmk', type: 'group',
+                //     children: [
+                //         { label: 'Buku Saku', key: 'buku-saku' },
+                //         { label: 'Materi Pengendalian', key: 'pengendalian' },
+                //     ]
+                // },
             ]
         }
     ];

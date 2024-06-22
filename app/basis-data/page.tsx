@@ -1,13 +1,13 @@
 "use client"
 import { Chart } from 'react-google-charts';
-import {Cascader, CascaderProps, Divider, Table, TableColumnsType} from 'antd';
+import { Cascader, CascaderProps, Divider, Table, TableColumnsType } from 'antd';
 import React from 'react';
 import { Select, DatePicker, Button } from 'antd';
-import {Basdat2Type, BasdatType} from "@/utils/dataType";
+import { Basdat2Type, BasdatType } from "@/utils/dataType";
 import Link from "next/link";
 import dayjs from "dayjs";
-import {dataBasdat} from "@/utils/dataBasdat";
-import {dataBasdat2} from "@/utils/dataBasdat2";
+import { dataBasdat } from "@/utils/dataBasdat";
+import { dataBasdat2 } from "@/utils/dataBasdat2";
 
 const { Option } = Select;
 const { RangePicker } = DatePicker;
@@ -187,7 +187,8 @@ const CascaderWithParentAllowed: React.FC = () => (
         onChange={onChange}
         size="large"
         defaultValue={['nasional']}
-        changeOnSelect  // This Cascader allows selecting parent options
+        changeOnSelect
+        style={{ width: '100%' }}
     />
 );
 
@@ -197,7 +198,7 @@ const CascaderWithoutParentAllowed: React.FC = () => (
         onChange={onChange}
         size="large"
         defaultValue={['tanaman_pangan', 'padi']}
-        // No changeOnSelect prop provided, default behavior is leaf node selection only
+        style={{ width: '100%' }}
     />
 );
 
@@ -217,7 +218,7 @@ const data_map = [
     ['Lampung', 2539088.6],
     ['Bangka-Belitung', 58374.15],
     ['Kepulauan Riau', 797.71],
-    [{v:'ID-JK', f:'Jakarta'}, 3510.65],
+    [{ v: 'ID-JK', f: 'Jakarta' }, 3510.65],
     ['Jawa Barat', 9248606.09],
     ['Jawa Tengah', 9617269.44],
     ['Yogyakarta', 537358.85],
@@ -225,21 +226,21 @@ const data_map = [
     ['Banten', 1648628.27],
     ['Bali', 622328.03],
     ['Nusa Tenggara Barat', 1431792.21],
-    [{v:'ID-NT', f:'Nusa Tenggara Timur'}, 781903.75],
-    [{v:'ID-KB', f:'Kalimantan Barat'}, 761528.78],
+    [{ v: 'ID-NT', f: 'Nusa Tenggara Timur' }, 781903.75],
+    [{ v: 'ID-KB', f: 'Kalimantan Barat' }, 761528.78],
     ['Kalimantan Tengah', 412028.62],
     ['Kalimantan Selatan', 903540.61],
     ['Kalimantan Timur', 248350.36],
-    [{v:'ID-KU', f:'Kalimantan Utara'}, 32683],
+    [{ v: 'ID-KU', f: 'Kalimantan Utara' }, 32683],
     ['Sulawesi Utara', 262375.64],
     ['Sulawesi Tengah', 832820.11],
     ['Sulawesi Selatan', 5173740.18],
     ['Sulawesi Tenggara', 513291.82],
     ['Gorontalo', 242389.64],
     ['Sulawesi Barat', 319619.22],
-    [{v:'ID-MA', f:'Maluku'}, 102382.33],
+    [{ v: 'ID-MA', f: 'Maluku' }, 102382.33],
     ['Maluku Utara', 34929.27],
-    [{v:'ID-PB', f:'Papua Barat'}, 25457.78],
+    [{ v: 'ID-PB', f: 'Papua Barat' }, 25457.78],
     ['Papua', 216901.27]
 ];
 
@@ -280,7 +281,7 @@ const options_bar = {
     bar: {
         groupWidth: "95%"
     },
-    legend: { position: 'none'},
+    legend: { position: 'none' },
     colors: ['#388e3b']
 };
 
@@ -330,7 +331,7 @@ const options_bar2 = {
         title: 'Produksi (ton)',
         minValue: 0  // Ensure y-axis starts at 0
     },
-    legend: { position: 'none'},
+    legend: { position: 'none' },
     height: 500,
     colors: ['#388e3b']
 };
@@ -339,7 +340,7 @@ const handleButtonClick = () => {
     alert('Preview - fitur sebenarnya belum diimplementasikan.');
 };
 
-const columns: TableColumnsType<Basdat2Type> = [
+const columns: TableColumnsType<{ key: string; provinsi: string; '2018': number; '2019': number; '2020': number; '2021': number; '2022': number; '2023': number }> = [
     {
         title: 'Provinsi',
         dataIndex: 'provinsi',
@@ -396,7 +397,7 @@ const BasisDataPage: React.FC = () => {
                         <RangePicker picker="year" size='large' defaultValue={[
                             dayjs('2020-01-01', 'YYYY-MM-DD'),
                             dayjs('2024-01-01', 'YYYY-MM-DD')
-                        ]}/>
+                        ]} />
                     </div>
 
                 </div>
@@ -463,17 +464,17 @@ const BasisDataPage: React.FC = () => {
                     <Button size="large" onClick={handleButtonClick}>Download Grafis</Button>
                 </div>
 
-                <div className="w-full max-w-screen-lg md:w-11/12 lg:w-10/12 xl:w-9/12 mb-8 md:mb-12">
-                    <Table
-                        columns={columns}
-                        dataSource={dataBasdat2}
-                        scroll={{ x: true }}
-                    />
-                    <Button size="large" onClick={handleButtonClick}>Download Data</Button>
-                </div>
 
 
 
+            </div>
+            <div className="w-full mb-8 md:mb-12">
+                <Table
+                    columns={columns}
+                    dataSource={dataBasdat2}
+                    scroll={{ x: true }}
+                />
+                <Button size="large" onClick={handleButtonClick}>Download Data</Button>
             </div>
         </div>
     );

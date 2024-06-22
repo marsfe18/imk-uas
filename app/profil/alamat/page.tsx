@@ -1,41 +1,41 @@
 import React from 'react';
 import { Anchor, Divider, Image, Table } from 'antd';
 import type { TableColumnsType, TableProps } from 'antd';
-import Judul2 from '@/components/Tittle/judul2';
 import Judul3 from '@/components/Tittle/judul3';
 import FileCard from '@/components/Card/File-unduh';
 import { dataAlamat } from '@/utils/dataAlamat';
 import { AlamatType } from '@/utils/dataType';
 
-const columns: TableColumnsType<AlamatType> = [
-    {
-        title: 'Atase',
-        dataIndex: 'atase',
-    },
-    {
-        title: 'Nama Pejabat',
-        dataIndex: 'pejabat',
-    },
-    {
-        title: 'Alamat Kantor',
-        dataIndex: 'alamat',
-    },
-    {
-        title: 'Email',
-        dataIndex: 'email',
-    },
-    {
-        title: 'Phone',
-        dataIndex: 'phone',
-    },
-    {
-        title: 'Fax',
-        dataIndex: 'fax',
-    },
-];
 
 
 const AlamatPage: React.FC = () => {
+    const columns: TableColumnsType<AlamatType> = [
+        {
+            title: 'Atase',
+            dataIndex: 'atase',
+        },
+        {
+            title: 'Nama Pejabat',
+            dataIndex: 'pejabat',
+        },
+        {
+            title: 'Alamat Kantor',
+            dataIndex: 'alamat',
+        },
+        {
+            title: 'Email',
+            dataIndex: 'email',
+        },
+        {
+            title: 'Phone',
+            dataIndex: 'phone',
+        },
+        {
+            title: 'Fax',
+            dataIndex: 'fax',
+        },
+    ];
+
     return (
         <div className='mx-auto flex flex-col md:flex-row justify-center'>
             <div className="md:pr-10 md:w-10/12">
@@ -43,9 +43,10 @@ const AlamatPage: React.FC = () => {
                     <h2 className="text-gray-700 text-heading2 lg:text-heading1">Alamat Kementrian</h2>
                     <Divider style={{ borderTop: '4px solid #8A8817' }} />
                 </header>
-                <div id='alamat1' className='w-auto'>
+                <div id='alamat1' className=''>
                     <Judul3 text='Alamat Atase' />
                     <Table
+                        bordered
                         columns={columns}
                         dataSource={dataAlamat}
                         scroll={{ x: true }}
