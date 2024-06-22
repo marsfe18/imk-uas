@@ -1,34 +1,178 @@
+"use client"
 import React from 'react';
-import { Button, Col, Divider, Flex, Row, Tabs } from 'antd';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-// import './index.css'
+import { Chart } from 'react-google-charts';
 
-const { TabPane } = Tabs;
+const ChartComponent = () => {
+    const data_map = [
+        ['Provinsi', 'Produksi Padi (ton)'],
+        ['Aceh', 1646941.44],
+        ['Sumatera Utara', 2068481.33],
+        ['Sumatera Barat', 1421092.02],
+        ['Riau', 229653.87],
+        ['Jambi', 321871.07],
+        ['Sumatera Selatan', 2750155.69],
+        ['Bengkulu', 286254.72],
+        ['Lampung', 2539088.6],
+        ['Bangka-Belitung', 58374.15],
+        ['Kepulauan Riau', 797.71],
+        [{v:'ID-JK', f:'Jakarta'}, 3510.65],
+        ['Jawa Barat', 9248606.09],
+        ['Jawa Tengah', 9617269.44],
+        ['Yogyakarta', 537358.85],
+        ['Jawa Timur', 9792575],
+        ['Banten', 1648628.27],
+        ['Bali', 622328.03],
+        ['Nusa Tenggara Barat', 1431792.21],
+        [{v:'ID-NT', f:'Nusa Tenggara Timur'}, 781903.75],
+        [{v:'ID-KB', f:'Kalimantan Barat'}, 761528.78],
+        ['Kalimantan Tengah', 412028.62],
+        ['Kalimantan Selatan', 903540.61],
+        ['Kalimantan Timur', 248350.36],
+        [{v:'ID-KU', f:'Kalimantan Utara'}, 32683],
+        ['Sulawesi Utara', 262375.64],
+        ['Sulawesi Tengah', 832820.11],
+        ['Sulawesi Selatan', 5173740.18],
+        ['Sulawesi Tenggara', 513291.82],
+        ['Gorontalo', 242389.64],
+        ['Sulawesi Barat', 319619.22],
+        [{v:'ID-MA', f:'Maluku'}, 102382.33],
+        ['Maluku Utara', 34929.27],
+        [{v:'ID-PB', f:'Papua Barat'}, 25457.78],
+        ['Papua', 216901.27]
+    ];
 
-const SejarahPage: React.FC = () => {
+    const options_map = {
+        region: 'ID',
+        displayMode: 'regions',
+        resolution: 'provinces',
+        colorAxis: {
+            colors: ['#ff4c4c', '#FAB733', '#69B34C'], // Red to Yellow to Green
+            minValue: 797.71, // Minimum value for the color gradient
+            maxValue: 9792575, // Maximum value for the color gradient (adjust as needed)
+        },
+        backgroundColor: '#f2f2f2',
+        datalessRegionColor: '#ffffff',
+        defaultColor: '#f5f5f5',
+        width: '100%',
+        height: '100%',
+    };
+
+    const data_bar = [
+        ['Tahun', 'Produksi (ton)'],  // Adding headers to match Google Charts format
+        ['2018', 59200533.72],
+        ['2019', 54604033.34],
+        ['2020', 54649202.24],
+        ['2021', 53776236.17],
+        ['2022', 54338410.44],
+        ['2023', 53963913.2]
+    ];
+
+    const options_bar = {
+        title: 'Produksi Beras Indonesia (ton) per Tahun',
+        hAxis: {
+            title: 'Tahun'
+        },
+        vAxis: {
+            title: 'Produksi (ton)',
+            minValue: 0  // Ensure y-axis starts at 0
+        },
+        bar: {groupWidth: "95%"},
+    };
+
+    const data_line = [
+        ['Tahun', 'Produksi (ton)'],  // Adding headers to match Google Charts format
+        ['2018', 59200533.72],
+        ['2019', 54604033.34],
+        ['2020', 54649202.24],
+        ['2021', 53776236.17],
+        ['2022', 54338410.44],
+        ['2023', 53963913.2]
+    ];
+
+    const options_line = {
+        title: 'Produksi Beras Indonesia (ton) per Tahun',
+        hAxis: {
+            title: 'Tahun'
+        },
+        vAxis: {
+            title: 'Produksi (ton)',
+            minValue: 0  // Ensure y-axis starts at 0
+        }
+        // bar: {groupWidth: "95%"},
+    };
+
+    const options_bar2 = {
+        title: 'Produksi Beras Indonesia (ton) per Tahun',
+        hAxis: {
+            title: 'Tahun'
+        },
+        vAxis: {
+            title: 'Produksi (ton)',
+            minValue: 0  // Ensure y-axis starts at 0
+        }
+        // bar: {groupWidth: "95%"},
+    };
+
+
+
     return (
-        <div className='flex justify-center mb-2'>
-            <div className=" bg-white py-4 px-4"
-                 style={{ maxWidth: '70rem' }}
-            >
-                <header className="judul-galeri">
-                    <h2 className="text-lg sm:text-xl md:text-2xl text-gray-700 font-semibold mb-2">Profil</h2>
-                    <h2 className="text-3xl sm:text-3xl md:text-4xl text-gray-700 font-bold mb-4">Sejarah Kementrian Pertanian</h2>
-                </header>
-                <p className="text-lg leading-relaxed">
-                    Sumber daya alam Indonesia yang kaya dipengaruhi oleh faktor keadaan alam Indonesia yang beriklim tropis dan letak geografis di antara dua benua, Asia dan Australia serta dua samudra, Samudra Pasifik dan Samudra Hindia. Sehingga sektor pertanian di Indonesia menjadi sektor penting bagi perekonomian bangsa. Oleh karena itu, Indonesia dikenal sebagai negara agraris dengan berbagai produk dari usaha pertanian, perkebunan, peternakan, perikanan dan kehutanan.
-                    <br /><br />
-                    Pada masa pendudukan Belanda, pada tanggal 1 Januari 1905 didirikan sebuah Departemen yang menangani bidang pertanian berdasarkan Surat Keputusan Gubernur Jenderal Hindia Belanda tanggal 23 September 1904 No. 20 Staatsblaad 982 yang didasarkan pada Surat Keputusan Raja Belanda No. 28 tanggal 28 Juli 1904 (Staatsblaad No. 380). Direktur Pertama Departemen Pertanian adalah Dr. Melchior Treub. Pada masa penjajahan Belanda urusan pertanian ditangani oleh Departement van Landbouw (1905), Nijverheid en Handel (1911) dan Departement van Ekonomische Zaken (1934).
-                    <br /><br />
-                    Sedangkan pada masa pendudukan Jepang, Gunseikanbu Sangyobu yang berperan dalam menangani urusan pertanian. Sejak 19 Agustus 1945, sektor pertanian berada di bawah Kementerian Kemakmuran yang merupakan kabinet pertama Republik Indonesia setelah kemerdekaan, dengan Ir. R. P. Surachman Tjokroadisurjo sebagai Menteri Kemakmuran pertama. Dikarenakan situasi Indonesia pada saat itu masih kacau oleh kedatangan tentara Belanda, Kementerian Kemakmuran mendirikan cabang di Magelang yang dipimpin oleh R.M. Reksohadiprojo. Pada bulan Juli 1947, kantor dipindahkan ke Borobudur kemudian beralih ke Yogyakarta.
-                    <br /><br />
-                    Dengan adanya Peraturan Presiden Nomor 47 Tahun 2009 tentang Pembentukan dan Organisasi Kementerian Negara, maka Departemen Pertanian berubah menjadi Kementerian Pertanian.
-                </p>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ width: '90%', height: '400px', marginBottom: '50px' }}>
+                <Chart
+                    chartType="GeoChart"
+                    data={data_map}
+                    options={options_map}
+                    width="100%"
+                    height="100%"
+                    legendToggle
+                />
             </div>
+
+            // ini emang rada aneh tp di dokumentasi kalo side by side pake table
+
+            <table className="columns">
+                <tr>
+                    <td>
+                        <div style={{ width: '90%', height: '400px' }}>
+                            <Chart
+                                chartType="ColumnChart"
+                                data={data_bar}
+                                options={options_bar}
+                                width="100%"
+                                height="100%"
+                                legendToggle
+                            />
+                        </div>
+                    </td>
+                    <td>
+                        <div style={{ width: '90%', height: '400px' }}>
+                            <Chart
+                                chartType="LineChart"
+                                data={data_line}
+                                options={options_line}
+                                width="100%"
+                                height="100%"
+                                legendToggle
+                            />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div style={{ width: '90%', height: '400px', marginBottom: '50px' }}>
+                <Chart
+                    chartType="BarChart"
+                    data={data_map}
+                    options={options_bar2}
+                    // width="100%"
+                    // height="100%"
+                    legendToggle
+                />
+            </div>
+
+
         </div>
     );
 };
 
-export default SejarahPage;
+export default ChartComponent;
