@@ -24,16 +24,16 @@ const SearchInput: React.FC<SearchInputProps> = ({ initialQuery = "" }) => {
 
     return (
         <div className='mt-3'>
-            <Space.Compact style={{ width: '100%', height: '72px' }}>
+            <Space.Compact style={{ width: '100%', height: '54px' }}>
                 <Input
                     placeholder='Cari...'
-                    style={{ fontSize: '36px', padding: '0 1rem', borderRadius: 0 }}
+                    style={{ fontSize: '24px', padding: '0 1rem', borderRadius: 0 }}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     onPressEnter={handleSearch}
                 />
                 <Button
-                    style={{ height: '72px', fontSize: '40px', borderRadius: 0, display: 'flex', alignItems: 'center', backgroundColor: '#E2EED9' }}
+                    style={{ height: '54px', fontSize: '40px', borderRadius: 0, display: 'flex', alignItems: 'center', backgroundColor: '#E2EED9' }}
                     onClick={handleSearch}
                 >
                     <SearchOutlined color='white' />

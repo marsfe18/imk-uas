@@ -76,7 +76,7 @@ const FilterBerita: React.FC<FilterBeritaProps> = ({ query }) => {
         <div className="space-y-4">
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 w-full">
                 <div className="flex flex-col flex-grow md:w-1/3">
-                    <label className="mb-2 text-xl font-semibold">Urutkan berdasarkan</label>
+                    <label className="mb-2 text-lg font-semibold">Urutkan berdasarkan</label>
                     <Select value={sort} onChange={setSort} size='large'>
                         <Option value="terbaru">Terbaru</Option>
                         <Option value="terlama">Terlama</Option>
@@ -85,7 +85,7 @@ const FilterBerita: React.FC<FilterBeritaProps> = ({ query }) => {
                 </div>
 
                 <div className="flex flex-col flex-grow md:w-1/3">
-                    <label className="mb-2 text-xl font-semibold">Kategori</label>
+                    <label className="mb-2 text-lg font-semibold">Kategori</label>
                     <Select
                         placeholder='semua'
                         mode="multiple"
@@ -100,7 +100,7 @@ const FilterBerita: React.FC<FilterBeritaProps> = ({ query }) => {
                 </div>
 
                 <div className="flex flex-col flex-grow md:w-1/3">
-                    <label className="mb-2 text-xl font-semibold">Tanggal</label>
+                    <label className="mb-2 text-lg font-semibold">Tanggal</label>
                     <RangePicker
                         value={dateRange}
                         onChange={onDateChange}

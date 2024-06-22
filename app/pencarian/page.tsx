@@ -1,14 +1,10 @@
 "use client"
 import React from 'react';
-import { AppstoreOutlined, BookOutlined, FieldTimeOutlined } from '@ant-design/icons';
-import { Divider, Empty, Space, Tabs } from 'antd';
+import { Tabs } from 'antd';
 import MaxWLayout from '../MaxWLayout';
-import { searchBuku, searchFilterBerita, searchPengumuman } from '@/utils/searchGlobal';
-import CardBeritaMain from '@/components/Card/cardBeritaMain';
+import { searchPengumuman } from '@/utils/searchGlobal';
 import SearchInput from '../../components/Pencarian/searchInput';
 import BeritaKontenList from '../../components/Pencarian/BeritaKontenList';
-import PenguKontenList from '@/components/Pencarian/PenguKontenList';
-import FilterBerita from '../../components/Filter/pencarian/filterBerita';
 import BukuKontenList from '@/components/Pencarian/BukuKontenList';
 import MagazineKontenList from '@/components/Pencarian/MagazineKontenList';
 
@@ -37,7 +33,7 @@ const UjiCoba = ({ searchParams }: {
                         >
                             <TabPane
                                 tab={
-                                    <span className="flex items-center text-lg md:text-2xl font-semibold md:h-16 md:px-3">
+                                    <span className="flex items-center text-lg md:text-lg font-semibold md:h-8 md:px-3">
 
                                         Berita Kementrian
                                     </span>
@@ -46,22 +42,9 @@ const UjiCoba = ({ searchParams }: {
                             >
                                 <BeritaKontenList query={query} />
                             </TabPane>
-                            {/* <TabPane
-                                tab={
-                                    <span className="flex items-center text-lg md:text-2xl font-semibold md:h-16">
-
-                                        Pengumuman ({listPengumuman.length})
-                                    </span>
-                                }
-                                key="2"
-                            >
-                                <div className="container mx-auto">
-                                    <PenguKontenList listPengu={listPengumuman} query={query} />
-                                </div>
-                            </TabPane> */}
                             <TabPane
                                 tab={
-                                    <span className="flex items-center text-lg md:text-2xl font-semibold md:h-16">
+                                    <span className="flex items-center text-lg md:text-lg font-semibold md:h-8 md:px-3">
                                         Buku
                                     </span>
                                 }
@@ -74,7 +57,7 @@ const UjiCoba = ({ searchParams }: {
                             </TabPane>
                             <TabPane
                                 tab={
-                                    <span className="flex items-center text-lg md:text-2xl font-semibold md:h-16">
+                                    <span className="flex items-center text-lg md:text-lg font-semibold md:h-8 md:px-3">
 
                                         E-Magazine
                                     </span>
