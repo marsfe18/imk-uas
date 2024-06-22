@@ -75,5 +75,26 @@ export interface MagazineProps {
     tanggal: Date;
 }
 
+export interface BasdatType {
+    key: string;
+    Komoditas: string;
+    Satuan: string;
+    '2020': number;
+    '2021': number;
+    '2022': number;
+    '2023': number;
+    '2024': number;
+}
+
+export interface Basdat2Type {
+    key: string;
+    Komoditas: string;
+    Satuan: string;
+    '2020': number;
+    '2021': number;
+    '2022': number;
+    '2023': number;
+    '2024': number;
+}
 
 export const listKat = ['Agenda', 'Unit Kerja', 'Siaran Pers', 'Pengumuman', 'Pendaftaran Varietas', 'Perlindungan Varietas', 'Iptek'];
