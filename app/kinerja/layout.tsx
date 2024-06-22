@@ -5,7 +5,7 @@ import Judul2 from '@/components/Tittle/judul2';
 const ProfileLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <MaxWLayout>
-            <header className='text-gray-700 '>
+            <header className=''>
                 <Judul2 text='Kinerja' />
             </header>
             {children}

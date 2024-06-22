@@ -130,7 +130,7 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                 { label: <Link href="/informasi-publik/sk-dip">SK DIP</Link>, key: 'sk-dip' },
                 { label: 'Laporan Kekayaan', key: 'lhk' },
                 { label: 'PPID', key: 'ppid' },
-                { label: 'Pengaduan', key: 'pengaduan' },
+                { label: <Link href="/informasi-publik/pengaduan">Pengaduan</Link>, key: 'pengaduan' },
                 {
                     label: 'PMK', key: 'pmk', type: 'group',
                     children: [

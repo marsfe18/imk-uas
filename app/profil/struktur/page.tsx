@@ -6,7 +6,6 @@ const StrukturPage: React.FC = () => {
     return (
         <div className="">
             <header>
-                <Judul2 text='Profil' />
                 <h2 className=" text-gray-700 text-heading2 md:text-heading1">Struktur Organisasi</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />

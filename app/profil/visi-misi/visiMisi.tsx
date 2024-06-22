@@ -7,7 +7,6 @@ const VisiKonten: React.FC = () => {
     return (
         <>
             <header id='visi'>
-                <Judul2 text='Profil' />
                 <h2 className="text-heading2 lg:text-heading1">Visi dan Misi</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />

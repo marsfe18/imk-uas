@@ -5,11 +5,12 @@ import Link from 'next/link';
 
 interface FileProps {
     title: string;
-    fileSize: string;
+    fileSize?: string | null;
     fileLink: string;
+    kategori?: string | null;
 }
 
-const FileCard: React.FC<FileProps> = ({ title, fileSize, fileLink }) => {
+const FileCard: React.FC<FileProps> = ({ title, fileSize, fileLink, kategori }) => {
     return (
         <Link href={fileLink}>
             <ConfigProvider

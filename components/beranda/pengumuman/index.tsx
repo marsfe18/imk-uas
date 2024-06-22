@@ -2,7 +2,7 @@ import React from 'react';
 import Judul1 from '@/components/Tittle/judul1';
 import { Divider, Row, Col } from 'antd';
 // import { dataBerita } from '@/components/Card-Berita/dataBerita';
-import CardPenguHome from '../../Card/cardPengumuman';
+import CardPenguHome from '../../Card/cardPenguHome';
 import { dataBerita } from '@/utils/dataBerita';
 // import { BeritaProps } from '@/utils/dataType';
 // import { dataPengumuman } from '@/utils/dataPengu';

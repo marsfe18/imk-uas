@@ -31,6 +31,7 @@ const CardPenguHome: React.FC<PenguProps> = ({ data }) => {
                     width={200}
                     height={200}
                     style={{ objectFit: 'cover' }}
+                    className='w-[150px] md:w-[200px]'
                 />
             </div>
             <div className="flex-1 ml-4">

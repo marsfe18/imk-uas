@@ -6,7 +6,6 @@ const SejarahKonten: React.FC = () => {
     return (
         <>
             <header >
-                <Judul2 text='Profil' />
                 <h2 className="text-heading2 lg:text-heading1 mb-2">Sejarah Kementrian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />

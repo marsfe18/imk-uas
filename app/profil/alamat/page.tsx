@@ -40,7 +40,6 @@ const AlamatPage: React.FC = () => {
         <div className='mx-auto flex flex-col md:flex-row justify-center'>
             <div className="md:pr-10 md:w-10/12">
                 <header id='alamat1'>
-                    <Judul2 text='Profil' />
                     <h2 className="text-gray-700 text-heading2 lg:text-heading1">Alamat Kementrian</h2>
                     <Divider style={{ borderTop: '4px solid #8A8817' }} />
                 </header>

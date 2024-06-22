@@ -149,7 +149,6 @@ const DataPegawaiPage: React.FC = () => {
         <div className=''>
             <div >
                 <header id='data-peg'>
-                    <Judul2 text='Profil' />
                     <h2 className="text-gray-700 text-heading2 lg:text-heading1">Data Pegawai</h2>
                     <Divider style={{ borderTop: '4px solid #8A8817' }} />
                 </header>

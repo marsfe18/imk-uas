@@ -2,11 +2,11 @@ import React from 'react';
 import MaxWLayout from '../MaxWLayout';
 import Judul2 from '@/components/Tittle/judul2';
 
-const DetailBeritaLayout = ({ children }: { children: React.ReactNode }) => {
+const informasiPublikLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <MaxWLayout>
             <header className=''>
-                <Judul2 text='Publikasi' />
+                <Judul2 text='Informasi Publik' />
             </header>
             {children}
         </MaxWLayout>
@@ -14,4 +14,4 @@ const DetailBeritaLayout = ({ children }: { children: React.ReactNode }) => {
     );
 };
 
-export default DetailBeritaLayout;
+export default informasiPublikLayout;

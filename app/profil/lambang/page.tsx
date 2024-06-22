@@ -1,15 +1,12 @@
 import React from 'react';
 import { Divider, Image } from 'antd';
 
-import Judul2 from '@/components/Tittle/judul2';
-
 
 const LambangPage: React.FC = () => {
 
     return (
         <div className="">
             <header>
-                <Judul2 text='Profil' />
                 <h2 className=" text-gray-700 text-heading2 md:text-heading1">Lambang Organisasi</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />

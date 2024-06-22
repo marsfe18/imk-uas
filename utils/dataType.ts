@@ -1,7 +1,3 @@
-import { dipa } from "./dataAnggaran";
-import { dataBerita } from "./dataBerita";
-import { iKepuasan, lKEselon, lKeuangan, lKinerja, lTahunan, lTPpid, rKAnggaran, rKTahunan, rKUnit } from "./dataKinerja";
-import { dataPengumuman } from "./dataPengu";
 
 export interface PengumumanProps {
     judul: string;
@@ -33,8 +29,9 @@ export interface DipaProps {
 
 export interface FileProps {
     judul: string;
-    ukuran: string;
+    ukuran?: string | null;
     link: string;
+    kategori?: string | null;
 }
 
 

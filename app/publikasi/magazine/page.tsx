@@ -10,7 +10,6 @@ const MagazinePage: React.FC = () => {
     return (
         <div>
             <header >
-                <Judul2 text='Publikasi' />
                 <h2 className="text-heading2 md:text-heading1 mb-2">E-Magazine</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />

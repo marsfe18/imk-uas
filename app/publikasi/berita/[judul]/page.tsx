@@ -27,7 +27,6 @@ const DetailBerita: React.FC = () => {
     return (
         <div>
             <header >
-                <Judul2 text='Publikasi | Berita' />
                 <h2 className="text-heading2 mb-2">{berita.judul}</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />

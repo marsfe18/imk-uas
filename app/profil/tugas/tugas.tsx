@@ -9,7 +9,6 @@ const TugasKonten: React.FC = () => {
     return (
         <>
             <header id='tugas'>
-                <Judul2 text='Profil' />
                 <h2 className="text-heading2 lg:text-heading1">Tugas dan Fungsi</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
