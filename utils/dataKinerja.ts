@@ -66,12 +66,12 @@ export const rKUnit: FileProps[] = [
         link: 'https://ppid.pertanian.go.id/doc/1/Renja%20SDM%202024%20-%20Merged.pdf',
     },
     {
-        judul: 'Rekapitulasi Sekretariat Jendral',
+        judul: 'Rekapitulasi Sekretariat Jenderal',
         ukuran: '220 kB',
         link: 'https://ppid.pertanian.go.id/doc/1/2.%20Setjen.pdf',
     },
     {
-        judul: 'Rekapitulasi Inspektorat Jendral',
+        judul: 'Rekapitulasi Inspektorat Jenderal',
         ukuran: '180 kB',
         link: 'https://ppid.pertanian.go.id/doc/1/1.%20Itjen.pdf',
     },

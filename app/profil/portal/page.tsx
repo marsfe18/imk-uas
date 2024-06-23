@@ -6,14 +6,14 @@ import Link from 'next/link';
 
 const PortalPage: React.FC = () => {
     const menuItems = [
-        { label: 'Sekretariat Jendral', href: '/sekretariat-jendral' },
-        { label: 'Inspektorat Jendral', href: '/inspektorat-jendral' },
-        { label: 'Tanaman Pangan', href: '/tanaman-pangan' },
-        { label: 'Hortikultura', href: '/hortikultura' },
-        { label: 'Peternakan dan Kesehatan Hewan', href: '/peternakan' },
-        { label: 'Standarisasi Instrumen Pertanian', href: '/standarisasi' },
-        { label: 'Prasarana dan Sarana Pertanian', href: '/prasarana' },
-        { label: 'Penyuluhan dan Pengembangan SDM', href: '/penyuluhan' },
+        { label: 'Sekretariat Jenderal', href: 'https://pertanian.go.id/setjen/' },
+        { label: 'Inspektorat Jenderal', href: 'https://itjen.pertanian.go.id' },
+        { label: 'Tanaman Pangan', href: 'https://tanamanpangan.pertanian.go.id/' },
+        { label: 'Hortikultura', href: 'https://hortikultura.pertanian.go.id/' },
+        { label: 'Peternakan dan Kesehatan Hewan', href: 'https://ditjenpkh.pertanian.go.id/' },
+        { label: 'Standarisasi Instrumen Pertanian', href: 'https://bsip.pertanian.go.id/' },
+        { label: 'Prasarana dan Sarana Pertanian', href: 'https://psp.pertanian.go.id/' },
+        { label: 'Penyuluhan dan Pengembangan SDM', href: 'https://bppsdmp.pertanian.go.id/' },
     ];
 
     return (
@@ -26,7 +26,7 @@ const PortalPage: React.FC = () => {
                 {menuItems.map((item, index) => (
                     <li key={index} className="flex items-center text-2xl font-semibold font-inter">
                         <ArrowRightOutlined style={{ marginRight: 20 }} />
-                        <Link href={item.href} className="inline-block border-b-2 border-gray-700 pb-2">
+                        <Link href={item.href} target={"_blank"} className="inline-block border-b-2 border-gray-700 pb-2">
                             {item.label}
                         </Link>
                     </li>

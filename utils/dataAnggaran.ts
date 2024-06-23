@@ -8,7 +8,7 @@ export const dataDipa: DipaProps[] = [
         t_2022: 'https://ppid.pertanian.go.id/doc/1/DIPA%202019/2020-01-018_01-00.pdf',
         t_2023: 'https://ppid.pertanian.go.id/doc/1/DIPA%20Setjen%202024.pdf',
         t_2024: 'https://ppid.pertanian.go.id/doc/1/DIPA%20Setjen%202024.pdf',
-        judul: 'Sekretariat Jendral',
+        judul: 'Sekretariat Jenderal',
         ukuran: '147 kB',
     },
     {
@@ -17,7 +17,7 @@ export const dataDipa: DipaProps[] = [
         t_2022: 'https://itjen-ppid.pertanian.go.id/doc/23/DIPA%20ITJEN%202021%20REVISI%201.pdf',
         t_2023: 'https://ppid.pertanian.go.id/doc/1/DIPA%20Itjen%202024.pdf',
         t_2024: 'https://ppid.pertanian.go.id/doc/1/DIPA%20Itjen%202024.pdf',
-        judul: 'Inspektorat Jendral',
+        judul: 'Inspektorat Jenderal',
         ukuran: '136 kB',
     },
     {
@@ -26,7 +26,7 @@ export const dataDipa: DipaProps[] = [
         t_2022: 'https://itjen-ppid.pertanian.go.id/doc/23/DIPA%20ITJEN%202021%20REVISI%201.pdf',
         t_2023: 'https://ppid.pertanian.go.id/doc/1/DIPA%20Itjen%202024.pdf',
         t_2024: 'https://ppid.pertanian.go.id/doc/1/DIPA%20Itjen%202024.pdf',
-        judul: 'Direktorat Jendral Tanaman Pangan',
+        judul: 'Direktorat Jenderal Tanaman Pangan',
         ukuran: '2.0 MB',
     },
     {
@@ -35,7 +35,7 @@ export const dataDipa: DipaProps[] = [
         t_2022: 'https://hortikultura-ppid.pertanian.go.id/doc/15/DIPA%202020.pdf',
         t_2023: 'https://hortikultura-ppid.pertanian.go.id/doc/15/DIPA%202020.pdf',
         t_2024: 'https://hortikultura-ppid.pertanian.go.id/doc/15/DIPA%202020.pdf',
-        judul: 'Direktorat Jendral Holtikultura',
+        judul: 'Direktorat Jenderal Holtikultura',
         ukuran: '136 kB',
     },
     {
@@ -53,7 +53,7 @@ export const dataDipa: DipaProps[] = [
         t_2022: 'https://ppid.pertanian.go.id/doc/1/2021-01-018_05-00.pdf',
         t_2023: 'https://ppid.pertanian.go.id/doc/1/2021-01-018_05-00.pdf',
         t_2024: 'https://ppid.pertanian.go.id/doc/1/2021-01-018_05-00.pdf',
-        judul: 'Direktorat Jendral Perkebunan',
+        judul: 'Direktorat Jenderal Perkebunan',
         ukuran: '136 kB',
     },
     {
@@ -71,7 +71,7 @@ export const dataDipa: DipaProps[] = [
         t_2022: 'https://ppid.pertanian.go.id/doc/1/DIPA%202019/2020-01-018_08-00.pdf',
         t_2023: 'https://ppid.pertanian.go.id/doc/1/DIPA%202019/2020-01-018_08-00.pdf',
         t_2024: 'https://ppid.pertanian.go.id/doc/1/DIPA%202019/2020-01-018_08-00.pdf',
-        judul: 'Direktorat Jendral Prasarana dan Saran',
+        judul: 'Direktorat Jenderal Prasarana dan Saran',
         ukuran: '136 kB',
     },
     {
