@@ -40,8 +40,8 @@ const Navbar: React.FC = () => {
                             open={visible}
                             style={{ zIndex: 99999 }}
                         >
+
                             <LeftMenu mode="inline" />
-                            {/* <RightMenu mode="inline" /> */}
                         </Drawer>
                     </div>
                 </Layout.Header>
