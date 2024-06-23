@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-shade4 opacity-80"></div>
             <div className="container relative w-full z-20 max-w-[1080px] mx-auto my-0" >
                 <h1 className="mb-5 text-white text-3xl md:text-7xl font-sans font-semibold">
-                    Pusat Informasi dan Layanan Kementrian Pertanian
+                    Pusat Informasi dan Layanan Kementerian Pertanian
                 </h1>
                 <div className='mt-4 md:mt-8 xl:mt-14 '>
                     <Space.Compact

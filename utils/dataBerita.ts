@@ -636,9 +636,9 @@ Syahrul menyebutkan saat ini pertanian menjadi sektor penopang perekonomian nasi
 
                     Ia mengatakan produksi padi masih rendah, karena petani masih kesulitan menangani hama wareng, tikus dan irigasi.
 
-                    "Kami sudah berkoordinasi dengan Kementrian Pertanian untuk memenuhi kebutuhan tanaman pangan, agar sarana dan prasarana yang belum ada dapat dibangun seperti irigasi," ujarnya.
+                    "Kami sudah berkoordinasi dengan Kementerian Pertanian untuk memenuhi kebutuhan tanaman pangan, agar sarana dan prasarana yang belum ada dapat dibangun seperti irigasi," ujarnya.
 
-                    Menurut dia sinkronisasi program daerah dengan Kementrian PU dan Kementrian Pertanian, dalam meningkatkan produksi padi ini dapat berjalan dengan baik, sehingga petani dapat menanam padi dua hingga tiga kali dalam setahun.
+                    Menurut dia sinkronisasi program daerah dengan Kementerian PU dan Kementerian Pertanian, dalam meningkatkan produksi padi ini dapat berjalan dengan baik, sehingga petani dapat menanam padi dua hingga tiga kali dalam setahun.
 
                     "Saat ini banyak lahan yang sudah dicetak belum bisa tanam karena banjir seperti sawah di Desa Gadung," ujarnya.`,
         gambar: '/berita/26.jpeg',

@@ -2,27 +2,27 @@ import { FileProps } from "./dataType"
 
 export const rKTahunan: FileProps[] = [
     {
-        judul: 'RKT Kementrian Pertanian 2020',
+        judul: 'RKT Kementerian Pertanian 2020',
         ukuran: '2.0 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/Rekapitulasi%201%20Kementan%2020.pdf',
     },
     {
-        judul: 'RKT Kementrian Pertanian 2021',
+        judul: 'RKT Kementerian Pertanian 2021',
         ukuran: '1.8 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/Rekapitulasi%201%20Kementan%2020.pdf',
     },
     {
-        judul: 'RKT Kementrian Pertanian 2022',
+        judul: 'RKT Kementerian Pertanian 2022',
         ukuran: '1.8 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/RKT%20Kementan%202023.pdf',
     },
     {
-        judul: 'RKT Kementrian Pertanian 2023',
+        judul: 'RKT Kementerian Pertanian 2023',
         ukuran: '1.8 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/RKT%20Kementan%202023.pdf',
     },
     {
-        judul: 'RKT Kementrian Pertanian 2024',
+        judul: 'RKT Kementerian Pertanian 2024',
         ukuran: '1.7 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/1.%20Rekapitulasi%201%20Kementan.pdf',
     },
@@ -188,32 +188,32 @@ export const lTPpid: FileProps[] = [
 
 export const lKinerja: FileProps[] = [
     {
-        judul: 'LAKIN Kementrian Pertanian 2018',
+        judul: 'LAKIN Kementerian Pertanian 2018',
         ukuran: '11.9 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/LAPORAN%20KINERJA%20KEMENTERIAN%20PERTANIAN%202019non%20stp.pdf',
     },
     {
-        judul: 'LAKIN Kementrian Pertanian 2019',
+        judul: 'LAKIN Kementerian Pertanian 2019',
         ukuran: '9.5 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/LAPORAN%20KINERJA%20KEMENTERIAN%20PERTANIAN%202019non%20stp.pdf',
     },
     {
-        judul: 'LAKIN Kementrian Pertanian 2020',
+        judul: 'LAKIN Kementerian Pertanian 2020',
         ukuran: '10.1 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/Laporan%20Kinerja%20Kementan%202022.pdf',
     },
     {
-        judul: 'LAKIN Kementrian Pertanian 2021',
+        judul: 'LAKIN Kementerian Pertanian 2021',
         ukuran: '12.2 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/Laporan%20Kinerja%20Kementan%202022.pdf',
     },
     {
-        judul: 'LAKIN Kementrian Pertanian 2022',
+        judul: 'LAKIN Kementerian Pertanian 2022',
         ukuran: '9.0 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/Laporan%20Kinerja%20Kementan%202022.pdf',
     },
     {
-        judul: 'LAKIN Kementrian Pertanian 2023',
+        judul: 'LAKIN Kementerian Pertanian 2023',
         ukuran: '10.0 MB',
         link: 'https://ppid.pertanian.go.id/doc/1/LAKIN%20Kementan%202023.pdf',
     }
@@ -270,22 +270,22 @@ export const lKEselon: FileProps[] = [
 
 export const rKAnggaran: FileProps[] = [
     {
-        judul: 'RKA Kementrian Pertanian 2021',
+        judul: 'RKA Kementerian Pertanian 2021',
         ukuran: '234 kB',
         link: 'https://ppid.pertanian.go.id/doc/1/RKA%20Kementan%202023_1_organized.pdf',
     },
     {
-        judul: 'RKA Kementrian Pertanian 2022',
+        judul: 'RKA Kementerian Pertanian 2022',
         ukuran: '246 kB',
         link: 'https://ppid.pertanian.go.id/doc/1/RKA%20Kementan%202023_1_organized.pdf',
     },
     {
-        judul: 'RKA Kementrian Pertanian 2023',
+        judul: 'RKA Kementerian Pertanian 2023',
         ukuran: '232 kB',
         link: 'https://ppid.pertanian.go.id/doc/1/RKA%20Kementan%202023_1_organized.pdf',
     },
     {
-        judul: 'RKA Kementrian Pertanian 2024',
+        judul: 'RKA Kementerian Pertanian 2024',
         ukuran: '221 kB',
         link: 'https://ppid.pertanian.go.id/doc/1/RKA%20Kementan%202023_1_organized.pdf',
     },

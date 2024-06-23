@@ -6,7 +6,7 @@ const SejarahKonten: React.FC = () => {
     return (
         <>
             <header >
-                <h2 className="text-heading2 lg:text-heading1 mb-2">Sejarah Kementrian</h2>
+                <h2 className="text-heading2 lg:text-heading1 mb-2">Sejarah Kementerian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <p className="text-xl leading-relaxed">

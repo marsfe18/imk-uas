@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
                     >
                         <div className="logo h-full" style={{ display: 'flex', alignItems: 'center', height: '100%', }}>
                             <img src="/logo.png" alt="Logo" width={30} height={30} />
-                            <span className="ml-3 text-gray-700 text-lg font-semibold">Kementrian Pertanian</span>
+                            <span className="ml-3 text-gray-700 text-lg font-semibold">Kementerian Pertanian</span>
                         </div>
                     </Link>
                     <div className="navbar-menu">
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
                             </Button>
                         </div>
                         <Drawer
-                            title="Kementrian Pertanian"
+                            title="Kementerian Pertanian"
                             placement="right"
                             closable={true}
                             onClose={showDrawer}

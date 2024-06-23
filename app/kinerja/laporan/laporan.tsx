@@ -8,7 +8,7 @@ const LaporanKonten: React.FC = () => {
     return (
         <>
             <header id='laporan1'>
-                <h2 className="text-gray-700 text-heading2 lg:text-heading1">Laporan Kementrian</h2>
+                <h2 className="text-gray-700 text-heading2 lg:text-heading1">Laporan Kementerian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='laporan1'>

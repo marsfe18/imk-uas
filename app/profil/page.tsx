@@ -17,7 +17,7 @@ const SejarahPage: React.FC = () => {
                         {
                             key: 'sejarah',
                             href: '#sejarah',
-                            title: <p className='text-lg'>Sejarah Kementrian</p>,
+                            title: <p className='text-lg'>Sejarah Kementerian</p>,
                         },
                         {
                             key: 'visi-misi',

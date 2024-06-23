@@ -80,7 +80,7 @@ const AnggaranKonten: React.FC = () => {
     return (
         <>
             <header id='dipa'>
-                <h2 className=" text-heading2 lg:text-heading1">Anggaran Kementrian</h2>
+                <h2 className=" text-heading2 lg:text-heading1">Anggaran Kementerian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='dipa'>

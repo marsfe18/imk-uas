@@ -40,7 +40,7 @@ const AlamatPage: React.FC = () => {
         <div className='mx-auto flex flex-col md:flex-row justify-center'>
             <div className="md:pr-10 md:w-10/12">
                 <header id='alamat1'>
-                    <h2 className="text-gray-700 text-heading2 lg:text-heading1">Alamat Kementrian</h2>
+                    <h2 className="text-gray-700 text-heading2 lg:text-heading1">Alamat Kementerian</h2>
                     <Divider style={{ borderTop: '4px solid #8A8817' }} />
                 </header>
                 <div id='alamat1' className=''>
@@ -59,7 +59,7 @@ const AlamatPage: React.FC = () => {
                         <p className='text-md'>Daftar Alamat Kantor Pertanian baik Kantor lingkup Kementerian  Pertanian maupun Satuan Kerja Perangkat Daerah pada sektor Pertanian,  Perkebunan, Peternakan dan Ketahanan Pangan dapat diunduh di bawah.</p>
 
                         <FileCard
-                            title="Unduh Alamat Kantor Kementrian"
+                            title="Unduh Alamat Kantor Kementerian"
                             fileSize="200 Kb"
                             fileLink="https://ppid.pertanian.go.id/doc/1/Buku_Daftar_Alamat_2023.pdf"
                         />

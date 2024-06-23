@@ -9,7 +9,7 @@ const RencanaKerja: React.FC = () => {
     return (
         <>
             <header id='rencana1'>
-                <h2 className="text-gray-700 text-heading2 lg:text-heading1">Rencana Kerja Kementrian</h2>
+                <h2 className="text-gray-700 text-heading2 lg:text-heading1">Rencana Kerja Kementerian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='rencana1'>
@@ -17,7 +17,7 @@ const RencanaKerja: React.FC = () => {
                 <p className="text-xl leading-relaxed">
                     Rencana Strategis (Renstra) merupakan dokumen perencanaan lima tahunan yang memuat Visi, Misi, Tujuan dan Sasaran yang ingin dicapai, termasuk strategi, kebijakan, program yang akan dilaksanakan dalam kurun waktu lima tahun. Renstra memberikan arah pembangunan organisasi jangka menengah.
                 </p>
-                <FileCard title='Rencana Strategis Kementrian Pertanian 2021-2024' fileSize='624 kB' fileLink='/' />
+                <FileCard title='Rencana Strategis Kementerian Pertanian 2021-2024' fileSize='624 kB' fileLink='/' />
             </div>
             <Divider />
             <div id='rencana2'>

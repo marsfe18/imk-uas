@@ -35,7 +35,7 @@ const UjiCoba = ({ searchParams }: {
                                 tab={
                                     <span className="flex items-center text-lg md:text-lg font-semibold md:h-8 md:px-3">
 
-                                        Berita Kementrian
+                                        Berita Kementerian
                                     </span>
                                 }
                                 key="1"
