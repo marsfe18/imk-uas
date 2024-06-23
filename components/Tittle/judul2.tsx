@@ -8,7 +8,9 @@ interface TitleProps {
 const Judul2: React.FC<TitleProps> = ({ text }) => {
     return (
         <>
-            <h2 className="text-lg sm:text-xl md:text-2xl">{text}</h2>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold uppercase" style={{ color: '#6B8557' }}>
+                {text}
+            </h2>
         </>
     );
 };
