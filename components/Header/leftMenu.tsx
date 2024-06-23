@@ -1,7 +1,7 @@
 import React from 'react';
-import { Menu, Tooltip } from 'antd';
+import { Menu} from 'antd';
 import { MenuProps } from 'antd';
-import { AppstoreOutlined, HomeOutlined, InsertRowAboveOutlined, BookOutlined, SearchOutlined, TeamOutlined, DatabaseOutlined } from '@ant-design/icons';
+import { DownOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -29,16 +29,21 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
                 <Link href="/">Beranda</Link>
             ),
             key: 'beranda',
-            icon: <HomeOutlined />,
+            // icon: <HomeOutlined />,
         },
         {
-            label: 'Profil',
+            label: (
+                <span>
+                    Profil
+                    {mode === 'horizontal' && <DownOutlined style={{ marginLeft: '8px' }} />}
+                </span>
+            ),
             key: 'profil',
-            icon: <TeamOutlined />,
+            // icon: <TeamOutlined />,
             children: [
                 {
                     type: 'group',
-                    label: 'Kementrian',
+                    label: 'Kementerian',
                     children: [
                         {
                             label: <Link href="/profil/sejarah">Sejarah</Link>,
@@ -81,9 +86,14 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
             ]
         },
         {
-            label: 'Kinerja',
+            label: (
+                <span>
+                    Kinerja
+                    {mode === 'horizontal' && <DownOutlined style={{ marginLeft: '8px' }} />}
+                </span>
+            ),
             key: 'kinerja',
-            icon: <AppstoreOutlined />,
+            // icon: <DownOutlined />,
             children: [
                 {
                     label: <Link href="/kinerja/rencana-kerja">Rencana Kerja</Link>,
@@ -100,12 +110,17 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
         {
             label: <Link href="/basis-data">Basis Data</Link>,
             key: 'basis-data',
-            icon: <DatabaseOutlined />,
+            // icon: <DatabaseOutlined />,
         },
         {
-            label: 'Publikasi',
+            label: (
+                <span>
+                    Publikasi
+                    {mode === 'horizontal' && <DownOutlined style={{ marginLeft: '8px' }} />}
+                </span>
+            ),
             key: 'publikasi',
-            icon: <InsertRowAboveOutlined />,
+            // icon: <InsertRowAboveOutlined />,
             children: [
                 {
                     label: <Link href="/publikasi/berita">Berita</Link>,
@@ -122,8 +137,13 @@ const LeftMenu: React.FC<LeftMenuProps> = ({ mode }) => {
         },
         {
             key: 'informasi',
-            label: 'Informasi Publik',
-            icon: <BookOutlined />,
+            label: (
+                <span>
+                    Informasi Publik
+                    {mode === 'horizontal' && <DownOutlined style={{ marginLeft: '8px' }} />}
+                </span>
+            ),
+            // icon: <BookOutlined />,
             children: [
                 { label: <Link href="/informasi-publik/sk-dip">SK DIP</Link>, key: 'sk-dip' },
                 { label: <Link href="/informasi-publik/lhk">Laporan Kekayaan</Link>, key: 'lhk' },
