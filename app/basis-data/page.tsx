@@ -374,7 +374,7 @@ const BasisDataPage: React.FC = () => {
     return (
         <div>
             <header >
-                <h2 className="text-heading2 md:text-heading1 mb-2">Basis Data Statistik Pertanian</h2>
+                <h2 className="text-heading2 md:text-heading1 mb-2">Visualisasi Statistik Pertanian</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
 
@@ -402,9 +402,6 @@ const BasisDataPage: React.FC = () => {
                 </div>
                 <div className="flex justify-end ">
                     <div className='flex space-x-4'>
-                        <Link href={'/basis-data/atur-data'}>
-                            <Button size="large">Lebih Lanjut</Button>
-                        </Link>
                         <Button size="large">Reset Filter</Button>
                         <Button type="primary" size="large" onClick={handleButtonClick}>Cari Data</Button>
                     </div>
