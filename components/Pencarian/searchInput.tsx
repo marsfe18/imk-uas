@@ -5,21 +5,14 @@ import { useRouter } from 'next/navigation';
 
 interface SearchInputProps {
     initialQuery?: string;
+    onSearch: (query: string) => void;
 }
 
-const SearchInput: React.FC<SearchInputProps> = ({ initialQuery = "" }) => {
+const SearchInput: React.FC<SearchInputProps> = ({ initialQuery = "", onSearch }) => {
     const [query, setQuery] = useState(initialQuery);
-    const router = useRouter();
 
     const handleSearch = () => {
-        const searchParams = new URLSearchParams({
-            query,
-            sort: 'terbaru',
-            kat: 'semua'
-        });
-        const newUrl = `/pencarian?${searchParams.toString()}`;
-        window.history.pushState({}, '', newUrl);
-        window.location.reload();
+        onSearch(query);
     }
 
     return (

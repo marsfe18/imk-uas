@@ -11,9 +11,10 @@ const dateFormat = 'YYYY-MM-DD';
 
 interface FilterBeritaProps {
     query: string;
+    onApplyFilter: (params: URLSearchParams) => void;
 }
 
-const FilterBerita: React.FC<FilterBeritaProps> = ({ query }) => {
+const FilterBerita: React.FC<FilterBeritaProps> = ({ query, onApplyFilter }) => {
     const router = useRouter();
     const searchParams = useSearchParams();
 
@@ -51,7 +52,7 @@ const FilterBerita: React.FC<FilterBeritaProps> = ({ query }) => {
         if (query) {
             params.set('query', query);
         }
-        router.push(`?${params.toString()}`);
+        onApplyFilter(params);
     };
 
     const handleResetFilter = () => {

@@ -11,9 +11,10 @@ const dateFormat = 'YYYY-MM-DD';
 
 interface FilterMagazineProps {
     query: string;
+    onApplyFilter: (params: URLSearchParams) => void;
 }
 
-const FilterMagazine: React.FC<FilterMagazineProps> = ({ query }) => {
+const FilterMagazine: React.FC<FilterMagazineProps> = ({ query, onApplyFilter }) => {
     const router = useRouter();
     const searchParams = useSearchParams();
 
@@ -38,11 +39,6 @@ const FilterMagazine: React.FC<FilterMagazineProps> = ({ query }) => {
     const handleApplyFilter = () => {
         const params = new URLSearchParams();
         params.set('sort', sort);
-        // if (categories.length > 0) {
-        //     params.set('kat', categories.join(','));
-        // } else {
-        //     params.set('kat', 'semua');
-        // }
         if (dateRange[0] && dateRange[1]) {
             params.set('startDate', dateRange[0].format(dateFormat));
             params.set('endDate', dateRange[1].format(dateFormat));
@@ -51,6 +47,7 @@ const FilterMagazine: React.FC<FilterMagazineProps> = ({ query }) => {
             params.set('query', query);
         }
         router.push(`?${params.toString()}`);
+        onApplyFilter(params);
     };
 
     const handleResetFilter = () => {
