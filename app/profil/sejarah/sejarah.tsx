@@ -10,7 +10,7 @@ const SejarahKonten: React.FC = () => {
             </header>
             <div className=" lg:items-start lg:w-3/4 lg:pr-8">
                 <Divider style={{ borderTop: '4px solid #8A8817' }} />
-                <p className="text-base lg:text-xl !leading-relaxed text-gray-600">
+                <p className="text-base lg:text-lg !leading-relaxed text-gray-600">
                     Sumber daya alam Indonesia yang kaya dipengaruhi oleh faktor keadaan alam Indonesia yang
                     beriklim tropis dan letak geografis di antara dua benua, Asia dan Australia serta dua
                     samudra, Samudra Pasifik dan Samudra Hindia. Sehingga sektor pertanian di Indonesia menjadi

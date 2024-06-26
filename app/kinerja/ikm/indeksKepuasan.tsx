@@ -11,7 +11,7 @@ const IndeksKonten: React.FC = () => {
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='ikm'>
-                <p className="text-xl leading-relaxed">
+                <p className="leading-relaxed">
                     Pengukuran Indek Kepuasan Masyarakat (IKM), merupakan tingkat hasil kepuasan yang dirasakan oleh masyarakat dalam pelayanan publik yang diberikan oleh Kementerian Pertanian.
                 </p>
                 <div>

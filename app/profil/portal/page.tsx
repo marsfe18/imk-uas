@@ -24,7 +24,7 @@ const PortalPage: React.FC = () => {
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <ul className="space-y-8 pt-5 ">
                 {menuItems.map((item, index) => (
-                    <li key={index} className="flex items-center text-2xl font-semibold font-inter">
+                    <li key={index} className="flex items-center text-lg font-semibold font-inter">
                         <ArrowRightOutlined style={{ marginRight: 20 }} />
                         <Link href={item.href} target={"_blank"} className="inline-block border-b-2 border-gray-700 pb-2">
                             {item.label}

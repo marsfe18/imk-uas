@@ -11,7 +11,7 @@ const StrukturPage: React.FC = () => {
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <Image src='/struktur.jpg'></Image>
             <div className=" lg:items-start lg:w-3/4 lg:pr-8">
-                <ul className="list-decimal list-inside text-xl md:text-2xl leading-relaxed mb-4 mt-4 space-y-3">
+                <ul className="list-decimal list-inside  leading-relaxed mb-4 mt-4 space-y-3">
                     <li>Menteri Pertanian</li>
                     <li>Staf Ahli</li>
                     <li>Sekretariat Jenderal</li>
@@ -41,7 +41,7 @@ const StrukturPage: React.FC = () => {
                     </a>
                     .
                 </p>
-        </div>
+            </div>
         </div>
 
     );

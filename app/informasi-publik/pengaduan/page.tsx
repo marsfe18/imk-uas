@@ -10,7 +10,7 @@ const PengaduanPage: React.FC = () => {
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <Judul3 text='Alur Pengaduan' />
-            <ul className="list-decimal list-inside text-xl md:text-2xl leading-relaxed mb-4 mt-4 space-y-3">
+            <ul className="list-decimal list-inside md:text-2xl leading-relaxed mb-4 mt-4 space-y-3">
                 <li>Pemohon Informasi dapat menyampaikan pengaduan secara online melalui link Layanan Aspirasi dan Pengaduan Online. </li>
                 <li>Pemohon melengkapi formulir yang tersedia di dalamnya.</li>
                 <li>Pemohon juga dapat menyampaikan pengaduan melalui google form melalui link Pengaduan Pusat. </li>

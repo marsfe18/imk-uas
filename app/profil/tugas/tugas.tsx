@@ -14,17 +14,17 @@ const TugasKonten: React.FC = () => {
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='tugas'>
                 <Judul3 text='Tugas' />
-                <p className="text-xl leading-relaxed">
+                <p className=" leading-relaxed">
                     Berdasarkan Peraturan Presiden Republik Indonesia Nomor 117 Tahun 2022, Kementerian Pertanian mempunyai tugas menyelenggarakan urusan pemerintahan di bidang pertanian untuk membantu Presiden dalam menyelenggarakan pemerintahan negara.
                 </p>
             </div>
             <Divider></Divider>
             <div id='fungsi' className=''>
                 <Judul3 text='Fungsi' />
-                <p className="text-xl leading-relaxed mb-4">
+                <p className=" leading-relaxed mb-4">
                     Dalam melaksanakan tugas, Kementerian Pertanian menyelenggarakan fungsi sebagai berikut:
                 </p>
-                <ol className="list-decimal list-inside text-xl leading-relaxed mb-4 space-y-3">
+                <ol className="list-decimal list-inside  leading-relaxed mb-4 space-y-3">
                     <li>
                         Perumusan, penetapan, dan pelaksanaan kebijakan di bidang penyediaan prasarana dan sarana pertanian, peningkatan produksi komoditas pertanian, peningkatan nilai tambah, penguatan daya saing, dan pemasaran hasil pertanian.
                     </li>

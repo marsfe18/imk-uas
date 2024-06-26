@@ -14,7 +14,7 @@ const BukuPage: React.FC = () => {
                 <h2 className="text-heading2 md:text-heading1 mb-2">Publikasi Buku</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
-            <p className='text-xl leading-relaxed mb-3'>Buku Seri Pembangunan Pertanian merupakan rangkaian buku yang berisikan informasi terkait kebijakan, program dan capaian kinerja di bidang pertanian.</p>
+            <p className=' leading-relaxed mb-3'>Buku Seri Pembangunan Pertanian merupakan rangkaian buku yang berisikan informasi terkait kebijakan, program dan capaian kinerja di bidang pertanian.</p>
             <BukuKontenList query='' />
         </div>
     );

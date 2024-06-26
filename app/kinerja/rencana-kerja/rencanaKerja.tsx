@@ -14,7 +14,7 @@ const RencanaKerja: React.FC = () => {
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='rencana1'>
                 <Judul3 text='Rencana Strategis' />
-                <p className="text-xl leading-relaxed">
+                <p className="leading-relaxed">
                     Rencana Strategis (Renstra) merupakan dokumen perencanaan lima tahunan yang memuat Visi, Misi, Tujuan dan Sasaran yang ingin dicapai, termasuk strategi, kebijakan, program yang akan dilaksanakan dalam kurun waktu lima tahun. Renstra memberikan arah pembangunan organisasi jangka menengah.
                 </p>
                 <FileCard title='Rencana Strategis Kementerian Pertanian 2021-2024' fileSize='624 kB' fileLink='/' />
@@ -22,7 +22,7 @@ const RencanaKerja: React.FC = () => {
             <Divider />
             <div id='rencana2'>
                 <Judul3 text='Rencana Kerja Tahunan' />
-                <p className="text-xl leading-relaxed">
+                <p className="leading-relaxed">
                     Rencana Kerja Tahunan (RKT) merupakan penjabaran dari Renstra, memuat seluruh rencana atau target kinerja yang hendak dicapai dalam satu tahun yang dituangkan dalam sejumlah indikator kinerja strategis yang relevan. Selanjutnya RKT yang telah disesuaikan dengan ketersediaan alokasi anggaran dituangkan dalam dokumen PK.
                 </p>
                 <div>

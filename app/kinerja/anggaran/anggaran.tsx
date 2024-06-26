@@ -85,7 +85,7 @@ const AnggaranKonten: React.FC = () => {
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <div id='dipa'>
                 <Judul3 text='DIPA' />
-                <p className="text-xl leading-relaxed">
+                <p className="leading-relaxed">
                     Daftar Isian Pelaksanaan Anggaran (DIPA) merupakan merupakan informasi publik yang wajib disediakan dan diumumkan secara berkala. DIPA Kementerian Pertanian disajikan dalam bentuk tabel dibawah ini.
                 </p>
                 <div className='mt-4'>
@@ -101,7 +101,7 @@ const AnggaranKonten: React.FC = () => {
             <Divider />
             <div id='rka'>
                 <Judul3 text='Rencana Kerja dan Anggaran' />
-                <p className="text-xl leading-relaxed">
+                <p className="leading-relaxed">
                     Rencana Kerja dan Anggaran yaitu data rencana kerja yang merupakan turunan dari Rencana Strategis dan diinput ke aplikasi KRISNA (Kolaborasi Perencanaan dan Informasi Kinerja Anggaran) yang merupakan aplikasi e-planning terintegrasi antara Bappenas, Kementerian PAN-RB dan Kementerian Keuangan.
                 </p>
                 <div>

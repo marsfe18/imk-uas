@@ -13,7 +13,7 @@ const MagazinePage: React.FC = () => {
                 <h2 className="text-heading2 md:text-heading1 mb-2">E-Magazine</h2>
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
-            <p className='text-xl leading-relaxed mb-5'>Warta Pertanian merupakan media cetak milik Kementerian Pertanian yang menyajikan informasi di bidang pertanian terbaru dan terkini.</p>
+            <p className=' leading-relaxed mb-5'>Warta Pertanian merupakan media cetak milik Kementerian Pertanian yang menyajikan informasi di bidang pertanian terbaru dan terkini.</p>
             <MagazineKontenList query='' />
         </div>
     );

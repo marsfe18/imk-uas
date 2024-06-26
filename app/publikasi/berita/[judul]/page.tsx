@@ -34,7 +34,7 @@ const DetailBerita: React.FC = () => {
                 <Image src={berita.gambar} alt={berita.judul} width={500} />
             </div>
 
-            <div className="mt-5 text-xl leading-relaxed">
+            <div className="mt-5 leading-relaxed">
                 {berita.deskripsi.split('\n').map((paragraph, index) => (
                     <p key={index} className="mb-4">{paragraph}</p>
                 ))}

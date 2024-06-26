@@ -11,7 +11,7 @@ const LambangPage: React.FC = () => {
             </header>
             <Divider style={{ borderTop: '4px solid #8A8817' }} />
             <Image src='/lambang.jpg'></Image>
-            <ul className="list-none list-inside text-xl leading-relaxed mb-4 mt-4 space-y-3">
+            <ul className="list-none list-inside text-lg leading-relaxed mb-4 mt-4 space-y-3">
                 <li>
                     <strong>Tunas</strong>: Menggambarkan pengertian biologis dari seluruh kegiatan yang dikelola oleh Kementerian Pertanian, kecuali manusia sebagai benda hidup.
                 </li>
